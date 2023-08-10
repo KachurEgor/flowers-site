@@ -1,0 +1,10 @@
+.dostavkaoplata {
+  background-image: url(/img/oplatadostavka-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dostavkaoplata .dostavka {
+  margin-bottom: 30px;
+  font-size: 18px;
+}/*# sourceMappingURL=oplata_dostavka.css.map */

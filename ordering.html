@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title></title>
+  <link rel="stylesheet" href="css/style-general.css">
+
+  <link rel="stylesheet" href="css/modal-city.css">
+  <link rel="stylesheet" href="css/modal-basket.css">
+  <link rel="stylesheet" href="css/style1-wrapper.css">
+  <link rel="stylesheet" href="css/style2-header-wrapper.css">
+  <link rel="stylesheet" href="css/style3-main.css">
+  <link rel="stylesheet" href="css/style4-catalog.css">
+  <link rel="stylesheet" href="css/style5-questions.css">
+  <link rel="stylesheet" href="css/style6-delivery.css">
+  <link rel="stylesheet" href="css/style7-reviews.css">
+  <link rel="stylesheet" href="css/style8-footer.css">
+  <link rel="stylesheet" href="/css/ordering/ordering.css">
+
+</head>
+
+<body>
+
+  <!--style1-wrapper-->
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <ul class="header__list">
+            <li> <a href="#" class="header__link">Подобрать</a></li>
+            <li> <a href="#" class="header__link">Отзывы</a></li>
+            <li> <a href="#" class="header__link">Доставка</a></li>
+            <li> <a href="#" class="header__link">Контакты</a></li>
+          </ul>
+          <form id="demo-b">
+            <input type="search" class="search" placeholder="Поиск по сайту">
+          </form>
+          <div class="header__soc">
+            <a data-modal class="header__callback header__firminfo" href="#">
+              <img src="img/geo.svg" alt="geo">
+              <div class="header__callback-geomarcker">Екатеринбург</div>
+            </a>
+
+            <div class="header__phone header__firminfo"> <img src="img/tel.svg" alt="tel">
+              <a class="header__phone-link" href="tel:89500265041">8 950 026 50 41</a>
+            </div>
+
+          </div>
+
+          <div class="header__socials">
+            <a class="header__socials-inst" href="#" target="_blank"><img src="img/inst.svg" alt="инстаграм"></a>
+            <a class="header__socials-telegram" href="#" target="_blank"><img src="img/telegr.svg" alt="телеграм"></a>
+            <a class="header__socials-vk" href="#" target="_blank"><img src="img/vk.svg" alt="вк"></a>
+            <a class="header__socials-whatsapp" href="#" target="_blank"><img src="img/whatsap.svg" alt="вотсап"></a>
+
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+  </div>
+
+  <!--style2-header-wrapper-->
+  <div class="header-wrapper">
+    <div class="container">
+      <div class="header__bottom">
+        <!-- Logo -->
+        <a class="header__logo" href="/"><img width="110" src="img/logo.svg" alt="логотип"></a>
+        <!-- Menu -->
+        <nav class="nav">
+          <ul class="header__menu">
+            <li class="header__menu-item dropdown">
+              <a href="#">Розы
+                <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                    viewBox="0 0 6 5" fill="none">
+                    <path
+                      d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                      fill="#cc9744" />
+                  </svg>
+                </div>
+              </a>
+              <div class="dropdown-content">
+                <a class="dropdown__item" href="#">Одноголовые</a>
+                <a class="dropdown__item" href="#">Кустовые</a>
+              </div>
+            </li>
+
+            <li class="header__menu-item dropdown">
+              <a href="#">Сборные
+                <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                    viewBox="0 0 6 5" fill="none">
+                    <path
+                      d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                      fill="#cc9744" />
+                  </svg>
+                </div>
+              </a>
+              <div class="dropdown-content">
+                <a class="dropdown__item" href="#">С розами</a>
+                <a class="dropdown__item" href="#">С кустовыми розами</a>
+                <a class="dropdown__item" href="#">С герберами</a>
+                <a class="dropdown__item" href="#">С лилиями</a>
+                <a class="dropdown__item" href="#">С хризантемами</a>
+                <a class="dropdown__item" href="#">С орхидеями</a>
+                <a class="dropdown__item" href="#">С альстрометриями</a>
+                <a class="dropdown__item" href="#">С гартензиями</a>
+                <a class="dropdown__item" href="#">С ирисами</a>
+                <a class="dropdown__item" href="#">С гвоздиками</a>
+                <a class="dropdown__item" href="#">С эустомой</a>
+                <a class="dropdown__item" href="#">С ромашками</a>
+                <a class="dropdown__item" href="#">С тюльпанами</a>
+
+              </div>
+            </li>
+            <li class="header__menu-item dropdown">
+              <a href="#">Монобукеты
+                <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                    viewBox="0 0 6 5" fill="none">
+                    <path
+                      d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                      fill="#cc9744" />
+                  </svg>
+                </div>
+              </a>
+              <div class="dropdown-content">
+                <a class="dropdown__item" href="#">Одноголовые</a>
+                <a class="dropdown__item" href="#">Кустовые</a>
+              </div>
+            </li>
+
+            <li class="header__menu-item dropdown">
+              <a href="#">Цветочные композиции
+                <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                    viewBox="0 0 6 5" fill="none">
+                    <path
+                      d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                      fill="#cc9744" />
+                  </svg>
+                </div>
+              </a>
+              <div class="dropdown-content">
+                <a class="dropdown__item" href="#">Одноголовые</a>
+                <a class="dropdown__item" href="#">Кустовые</a>
+              </div>
+            </li>
+
+            <li class="header__menu-item dropdown">
+              <a href="#">Съедобные композиции
+                <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                    viewBox="0 0 6 5" fill="none">
+                    <path
+                      d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                      fill="#cc9744" />
+                  </svg>
+                </div>
+              </a>
+              <div class="dropdown-content">
+                <a class="dropdown__item" href="#">Одноголовые</a>
+                <a class="dropdown__item" href="#">Кустовые</a>
+              </div>
+            </li>
+
+
+          </ul>
+        </nav>
+
+
+        <div class="header__card">
+          <a class="header__card-item" href="#">
+            <img src="img/like.svg" alt="like"><span>Избранное </span>
+            <strong class="total_count"> (12)</strong>
+          </a>
+
+          <a class="header__card-item" href="#">
+            <img src="img/card.svg" alt="card"><span>Корзина</span>
+            <strong class="total_count"> (0)</strong>
+          </a>
+        </div>
+
+        <div class="header__burger">
+          <span></span>
+        </div>
+
+      </div>
+      <nav id="site-navigation-mobile" class="main-navigation fixed">
+        <div class="main-navigation-inner full">
+          <div>
+            <ul id="header_menu" class="menu">
+              <li class="header__menu-item dropdown">
+                <a href="#">Съедобные композиции
+                  <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                      viewBox="0 0 6 5" fill="none">
+                      <path
+                        d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                        fill="#cc9744" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="dropdown-content show">
+                  <a class="dropdown__item" href="#">Одноголовые</a>
+                  <a class="dropdown__item" href="#">Кустовые</a>
+                </div>
+              </li>
+
+              <li class="header__menu-item dropdown">
+                <a href="#">Съедобные композиции
+                  <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                      viewBox="0 0 6 5" fill="none">
+                      <path
+                        d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                        fill="#cc9744" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="dropdown-content show">
+                  <a class="dropdown__item" href="#">Одноголовые</a>
+                  <a class="dropdown__item" href="#">Кустовые</a>
+                </div>
+              </li>
+
+
+              <li class="header__menu-item dropdown">
+                <a href="#">Съедобные композиции
+                  <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                      viewBox="0 0 6 5" fill="none">
+                      <path
+                        d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                        fill="#cc9744" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="dropdown-content show">
+                  <a class="dropdown__item" href="#">Одноголовые</a>
+                  <a class="dropdown__item" href="#">Кустовые</a>
+                </div>
+              </li>
+
+              <li class="header__menu-item dropdown">
+                <a href="#">Съедобные композиции
+                  <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                      viewBox="0 0 6 5" fill="none">
+                      <path
+                        d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                        fill="#cc9744" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="dropdown-content show">
+                  <a class="dropdown__item" href="#">Одноголовые</a>
+                  <a class="dropdown__item" href="#">Кустовые</a>
+                </div>
+              </li>
+              <li class="header__menu-item dropdown">
+                <a href="#">Съедобные композиции
+                  <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5"
+                      viewBox="0 0 6 5" fill="none">
+                      <path
+                        d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z"
+                        fill="#cc9744" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="dropdown-content show">
+                  <a class="dropdown__item" href="#">Одноголовые</a>
+                  <a class="dropdown__item" href="#">Кустовые</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+
+
+
+  <!--oplata_dostavka-->
+
+
+
+
+  <section class="ordering section-page">
+    <div class="container">
+      <nav class="breadcrumb"><a href="#">Главная</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a
+          href="#">Оформление заказа
+        </a></nav>
+      <h1 class="page-title">Оформление заказа</h1>
+
+      <div class="ordering__preview">
+        <div class="basket-modal__title ordering__title">
+          Ваш заказ </div>
+        <div class="basket__goods">
+          <div class="good">
+            <p class="good-number">1</p>
+            <img class="good-img" src="/img/product-1.jpg">
+            <div class="good__text">
+              <a href="#" class="good__title">Букет Pink Garden S
+              </a>
+              <div class="good__price"><span>1</span> * <span>2500</span><span
+                  class="woocommerce-Price-currencySymbol">₽</span></div>
+            </div>
+          </div>
+
+          <div class="good">
+            <p class="good-number">2</p>
+            <img class="good-img" src="/img/product-1.jpg">
+            <div class="good__text">
+              <a href="#" class="good__title">Букет Pink Garden S
+              </a>
+              <div class="good__price"><span>1</span> * <span>2500</span><span
+                  class="woocommerce-Price-currencySymbol">₽</span></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="basket-modal__total good-modal__total">Подытог: <span>2 500 </span><span
+            class="woocommerce-Price-currencySymbol">₽</span></div>
+      </div>
+
+
+
+      <div class="col2-set" id="customer_details" >
+        <div class="col-1">
+          <div class="woocommerce-billing-fields" style="display:flex">
+
+
+            <div class="woocommerce-billing-fields__field-wrapper">
+              <p class="form-row "><label for="billing_first_name" class="">Имя
+                  заказчика&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span
+                  class="woocommerce-input-wrapper">
+                  <input type="text" class="input-text wooccm-required-field"
+                    name="billing_first_name" id="billing_first_name" placeholder="Введите имя" value="" data-required="1"
+                    autocomplete="given-name"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-phone wooccm-type-tel validate-required validate-phone"
+                id="billing_phone_field" data-priority="20"><label for="billing_phone" class="">Телефон
+                  заказчика&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span
+                  class="woocommerce-input-wrapper"><input type="tel" class="input-text wooccm-required-field"
+                    name="billing_phone" id="billing_phone" placeholder="Для уточнения заказа" value=""
+                    data-required="1" autocomplete="tel" aria-describedby="billing_phone-description"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm11 wooccm-type-select"
+                id="billing_wooccm11_field" data-priority="30"><label for="billing_wooccm11" class="">Как лучше с Вами
+                  связаться?&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><select name="billing_wooccm11" id="billing_wooccm11"
+                    class="select " data-required="0" data-placeholder="">
+                    <option value="напишите мне в WhatsApp" selected="selected">напишите мне в WhatsApp</option>
+                    <option value="позвоните мне по телефону">позвоните мне по телефону</option>
+                  </select></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm12 wooccm-type-date"
+                id="billing_wooccm12_field" data-priority="40"><label for="billing_wooccm12" class="">Укажите дату
+                  доставки&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><input type="date" class="input-text " name="billing_wooccm12"
+                    id="billing_wooccm12" placeholder="" value="" data-required="0"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm13 wooccm-type-time"
+                id="billing_wooccm13_field" data-priority="50"><label for="billing_wooccm13" class="">Желаемое время
+                  доставки&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><input type="time" class="input-text " name="billing_wooccm13"
+                    id="billing_wooccm13" placeholder="" value="" data-required="0"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm14 wooccm-type-text"
+                id="billing_wooccm14_field" data-priority="60"><label for="billing_wooccm14" class="">Имя
+                  получателя&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm14"
+                    id="billing_wooccm14" placeholder="Введите имя" value="" data-required="0"></span></p>
+            </div>
+
+                   <div>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm15 wooccm-type-text"
+                id="billing_wooccm15_field" data-priority="70"><label for="billing_wooccm15" class="">Телефон
+                  получателя&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm15"
+                    id="billing_wooccm15" placeholder="+7 (000) 000 00 00" value="" data-required="0"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm16 wooccm-type-text"
+                id="billing_wooccm16_field" data-priority="80"><label for="billing_wooccm16" class="">Адрес
+                  доставки&nbsp;</label><span
+                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm16"
+                    id="billing_wooccm16" placeholder="Город, улица, дом, квартира" value="" data-required="0"></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm18 wooccm-type-checkbox"
+                id="billing_wooccm18_field" data-priority="90"><span class="woocommerce-input-wrapper"><label
+                    class="checkbox " data-required="0">
+                    <input type="checkbox" class="input-checkbox " name="billing_wooccm18" id="billing_wooccm18"
+                      value="1"> Нужна открытка?(+70 руб.)&nbsp;<span
+                      class="optional">(необязательно)</span></label></span></p>
+              
+              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm17 wooccm-type-textarea"
+                id="billing_wooccm17_field" data-priority="110"><label for="billing_wooccm17" class="">Ваши пожелания к
+                  заказу&nbsp;<span class="optional">(необязательно)</span></label><span
+                  class="woocommerce-input-wrapper"><textarea name="billing_wooccm17" class="input-text "
+                    id="billing_wooccm17" placeholder="Введите сообщение" rows="2" cols="5" data-required="0"></textarea></span></p>
+              <p class="form-row form-row-wide wooccm-field wooccm-field-email wooccm-type-email validate-email"
+                id="billing_email_field" data-priority="120"><label for="billing_email" class="">Ваш Email&nbsp;<span
+                    class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><input
+                    type="email" class="input-text " name="billing_email" id="billing_email"
+                    placeholder="нужен только для регистрации" value="" data-required="0" autocomplete="email username"
+                    aria-describedby="billing_email-description"><span class="description"
+                    id="billing_email-description" aria-hidden="true">нужен только для регистрации</span></span></p>
+
+                    <p class="form-row form-row-wide create-account woocommerce-validated">
+                      <label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
+                        <input class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox"
+                          id="createaccount" type="checkbox" name="createaccount" value="1"> <span>Зарегистрировать вас?</span>
+                      </label>
+                    </p>
+                    <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Подтвердить заказ" data-value="Подтвердить заказ">Подтвердить заказ</button>
+          </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--style8-footer-->
+  <footer class="footer section">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__col footer__col-20">
+          <a class="footer__logo" href="/"><img width="117" src="/img/logo.svg"></a>
+          <p><a href="#" class="footer__link">Выберите город.</a> (Внимание! Возможна только доставка - самовывоза нет)
+          </p>
+        </div>
+
+        <div class="footer__col footer__col-20">
+          <p>
+            <span class="footer__muted">Звонки</span> с 10:00 до 19:00 - <br><a href="tel:89270833305" target="_blank"
+              rel="noopener noreferrer" class="footer__link">8 (927) 083-33-05</a>
+          </p><br>
+          <p><span class="footer__muted">Приём заявок через сайт, соцсети и мессенджеры</span> - <strong>24/7
+              (круглосуточно)</strong>
+          </p>
+
+
+          <div class="footer-soc">
+            <a href="#"><img src="img/whatsap.svg"></a>
+            <a href="#"><img src="img/inst.svg"></a>
+            <a href="#"><img src="img/telegr.svg"></a>
+            <a href="#"><img src="img/vk.svg"></a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="footer__content-40">
+          <div class="footer__col">
+            <div class="footer-title">
+              <h3>Разделы</h3>
+            </div>
+            <ul class="footer__links">
+              <li><a href="#">Подобрать</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a>
+            </ul>
+            </li>
+          </div>
+          <div class="footer__col">
+            <div class="footer-title">
+              <h3>Кабинет пользователя</h3>
+            </div>
+            <ul class="footer__links">
+              <li><a href="#">Вход | Регистрация</a></li>
+              <li><a href="#">Заказы</a></li>
+              <li><a href="#">Избранное</a></li>
+              <li><a href="#">Публичная оферта</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="footer__col footer__col-20">
+
+          <img class="footer__ukassa" src="/img/cassa.png" alt="ю-касса">
+          <p class="footer__politic">© 2023 Доставка премиум букетов<br> «Название». Все права защищены.<br> Копирование
+            информации запрещено.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-1"><img src="img/footer-fon1.png"></div>
+    <div class="bg-2"><img src="img/footer-fon2.png"></div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

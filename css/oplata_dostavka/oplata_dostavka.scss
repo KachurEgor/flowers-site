@@ -1,0 +1,25 @@
+
+$fonts: "Playfair Display Bold", serif;
+$main-fonts: "Open Sans reg", sans-serif;
+$main-fonts-light: "Open Sans light", sans-serif;
+$main-fonts-bold: "Open Sans bold", sans-serif;
+$main-color: #3d3137;
+$text-color: #fff;
+$text-color_dark: #a7a4a5;
+$text-color_black: #000;
+$text-active: #cc9744;
+$gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
+
+
+.dostavkaoplata{
+    background-image: url(/img/oplatadostavka-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .dostavka{
+        margin-bottom: 30px;
+        font-size: 18px;
+      
+    }
+
+}

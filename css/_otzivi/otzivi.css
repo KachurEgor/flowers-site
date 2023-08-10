@@ -1,0 +1,78 @@
+.otzivi {
+  background-image: url(/img/catalpg-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.otzivi .otzivi__item {
+  border-radius: 5px;
+  border: 0.2px solid #a7a4a5;
+  background: #fff;
+  padding: calc(20px + 15 * (100vw - 400px) / 1920);
+  margin-bottom: 25px;
+  position: relative;
+}
+.otzivi .otziv-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.otzivi .otziv-foto {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.otzivi .autor {
+  margin-left: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.otzivi .otziv-date {
+  font-size: 14px;
+}
+.otzivi .autor__name {
+  font-size: calc(14px + 6 * (100vw - 400px) / 1920);
+  font-weight: 600;
+  font-family: "Playfair Display Bold", serif;
+  color: #cc9744;
+  text-decoration-line: underline;
+}
+.otzivi .otziv__content {
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.otzivi .otziv-galery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.otzivi-pulquote {
+  background-image: url(/img/otzivi-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 44px;
+  color: #fff;
+  font-size: calc(16px + 9 * (100vw - 400px) / 1920);
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  margin-bottom: calc(40px + 55 * (100vw - 400px) / 1920);
+}
+.otzivi-pulquote .text {
+  margin-bottom: 40px;
+  max-width: 800px;
+}/*# sourceMappingURL=otzivi.css.map */
