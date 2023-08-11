@@ -12,13 +12,13 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
 
 
 .dostavkaoplata{
-    background-image: url(/img/oplatadostavka-bg.jpg);
+    background-image: url(../img/oplatadostavka-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-size: 18px;
     .dostavka{
         margin-bottom: 30px;
-        font-size: 18px;
       
     }
 

@@ -239,7 +239,7 @@ select {
 }
 
 .basket {
-  background-image: url(/img/basket__bg.jpg);
+  background-image: url(../../img/basket__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -356,7 +356,7 @@ select {
 .basket__total {
   height: 250px;
   padding: 20px 47px;
-  background-image: url(/img/basket__total.jpg);
+  background-image: url(../../img/basket__total.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -406,8 +406,8 @@ select {
     grid-row: row1-s/row1-s;
   }
   .basket__close svg {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
   }
   .basket__price {
     grid-column: col1-s/col1-s;

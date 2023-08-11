@@ -11,7 +11,7 @@ $text-active: #cc9744;
 $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
 
 .basket {
-  background-image: url(/img/basket__bg.jpg);
+  background-image: url(../../img/basket__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,11 +24,9 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   }
 
   // .basket__wrapper
-  
   &__wrapper {
     display: grid;
     grid-template-columns: [col1-s] minmax(216px, 400px) [col2-s] minmax(75px, 104px) [col3-s] minmax(125px, 400px) [col4-s] minmax(75px, 104px) [col5-s] 30px;
-
     grid-template-rows: [row1-s] 30px [row2-s] 1px [row3-s] 100px;
     grid-auto-rows: [row1-s] 30px [row2-s] 1px [row3-s] 100px;
     justify-content: center;
@@ -45,7 +43,6 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   }
 
   // .basket__price
-
   &__price {
     grid-column: col2-s/col3-s;
     grid-row: row1-s/row2-s;
@@ -55,7 +52,6 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   }
 
   // .basket__kol
-
   &__kol {
     grid-column: col3-s/col4-s;
     grid-row: row1-s/row2-s;
@@ -65,7 +61,6 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   }
 
   // .basket__itogo
-
   &__itogo {
     grid-column: col4-s/col5-s;
     grid-row: row1-s/row2-s;
@@ -143,7 +138,7 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   &__total {
     height: 250px;
     padding: 20px 47px;
-    background-image: url(/img/basket__total.jpg);
+    background-image: url(../../img/basket__total.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -191,8 +186,8 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
     grid-column: col3-s/col3-s;
     grid-row: row1-s/row1-s;
     svg{
-      width: 15px;
-      height: 15px;
+      width: 30px;
+      height: 30px;
     }
 
 }

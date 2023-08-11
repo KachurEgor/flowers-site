@@ -1,5 +1,5 @@
 .otzivi {
-  background-image: url(/img/catalpg-bg.jpg);
+  background-image: url(../../img/catalpg-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,7 +60,7 @@
 }
 
 .otzivi-pulquote {
-  background-image: url(/img/otzivi-bg.jpg);
+  background-image: url(../../img/otzivi-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

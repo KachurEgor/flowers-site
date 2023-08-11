@@ -1,0 +1,90 @@
+
+$fonts: "Playfair Display Bold", serif;
+$main-fonts: "Open Sans reg", sans-serif;
+$main-fonts-light: "Open Sans light", sans-serif;
+$main-fonts-bold: "Open Sans bold", sans-serif;
+$main-color: #3d3137;
+$text-color: #fff;
+$text-color_dark: #a7a4a5;
+$text-color_black: #000;
+$text-active: #cc9744;
+$gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Недавно просмотренные товары/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.viewedProducts{
+  background-image: url(../../img/viewedProducts__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //padding: 120px 0 115px 0;
+
+  
+.similarProducts__btn{ 
+  margin: 0;
+  background: none;
+  &:hover{
+    background: $gradient-color;
+    color: $text-color;
+    
+    border: 1px solid $text-active;
+  }
+}
+
+}
+
+.viewedProducts__wrapper{
+  display: flex;
+  gap: calc(8% - 62px);
+  row-gap: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1006px){
+  .viewedProducts__wrapper{
+    justify-content: space-between;
+  }
+}
+.viewedProducts__item{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 350px;
+  &-title{
+    margin-bottom: 10px;
+    color: #CACACA;
+  }
+  &-wrapper{
+    max-width: 181px;
+    //min-height: 155px;
+  }
+}
+
+
+
+.viewedProducts__item-img{
+  //display: block;
+  width: calc(100px + 55 * (100vw - 400px) / 1920);
+  height: calc(100px + 55 * (100vw - 400px) / 1920);
+  /*width: 155px;
+  height: 155px;*/
+  margin: 0;
+  object-fit: cover;
+  align-items: center;
+  display: flex;
+
+}
+
+.viewedProducts__item-price{
+  color: $text-color;
+  margin-bottom: 10px;
+}
+
+.viewedProducts__svg{
+  top: 15px;
+  left: 15px;
+  padding: 0;
+}

@@ -9,6 +9,7 @@
   <title></title>
   <link rel="stylesheet" href="css/style-general.css">
 
+  <link rel="stylesheet" href="css/style-general.css">
   <link rel="stylesheet" href="css/modal-city.css">
   <link rel="stylesheet" href="css/modal-basket.css">
   <link rel="stylesheet" href="css/style1-wrapper.css">
@@ -19,8 +20,14 @@
   <link rel="stylesheet" href="css/style6-delivery.css">
   <link rel="stylesheet" href="css/style7-reviews.css">
   <link rel="stylesheet" href="css/style8-footer.css">
-  <link rel="stylesheet" href="/css/ordering/ordering.css">
-
+  <link rel="stylesheet" href="css/_prodact-card/product-block.css">
+  <link rel="stylesheet" href="css/_prodact-card/similarProducts.css">
+  <link rel="stylesheet" href="css/_prodact-card/viewedProducts.css">
+  <link rel="stylesheet" href="css/_basket/basket.css">
+  <link rel="stylesheet" href="css/_catalog/catalog.css">
+  <link rel="stylesheet" href="css/_otzivi/otzivi.css">
+  <link rel="stylesheet" href="css/oplata_dostavka/oplata_dostavka.css">
+  <link rel="stylesheet" href="css/ordering/ordering.css">
 </head>
 
 <body>
@@ -301,7 +308,7 @@
         <div class="basket__goods">
           <div class="good">
             <p class="good-number">1</p>
-            <img class="good-img" src="/img/product-1.jpg">
+            <img class="good-img" src="img/product-1.jpg">
             <div class="good__text">
               <a href="#" class="good__title">Букет Pink Garden S
               </a>
@@ -312,7 +319,7 @@
 
           <div class="good">
             <p class="good-number">2</p>
-            <img class="good-img" src="/img/product-1.jpg">
+            <img class="good-img" src="img/product-1.jpg">
             <div class="good__text">
               <a href="#" class="good__title">Букет Pink Garden S
               </a>
@@ -326,95 +333,116 @@
             class="woocommerce-Price-currencySymbol">₽</span></div>
       </div>
 
+      <!-- <div class="price__max">
+        <input class="price__max-input" type="text" placeholder="до">
+    </div> -->
 
+      <div class="ordering__body">
 
-      <div class="col2-set" id="customer_details" >
-        <div class="col-1">
-          <div class="woocommerce-billing-fields" style="display:flex">
+          <div class="ordering__col1">
+              <div class="form-row ">
+                <label for="billing_first_name">Имя заказчика&nbsp;*</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                <input class="price__max-input" type="text" name="billing_first_name" placeholder="Введите имя" >
+                </div>
+              </div>
+              <div class="form-row ">
+                <label for="billing_first_name1">Телефон заказчика&nbsp;*</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                  <input name="billing_first_name1" class="price__max-input" type="number"  placeholder="Для уточнения заказа" >
+                  </div>
+              </div>
+              <p >Как лучше с Вами связаться?
+                  <div class="ordering__col1-contactYou">
+                    <a href="#">
+                      <div class="ordering__col1-item">
+                        <div>
+                          <img src="/img/ordering__col1-whatsApp.png" alt="none">
+                        </div>
+                        <p>WhatsApp</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="ordering__col1-item">
+                        <div>
+                          <img src="/img/ordering__col1-tel.png" alt="none">
+                        </div>
+                        <p>Телефон</p>
+                      </div>
+                    </a>
 
+                  </div>
+              </p>
+              <div class="form-row ">
+                <label for="billing_first_name2">Укажите дату доставки&nbsp;</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                <input name="billing_first_name2" id="billing_first_name2" class="price__max-input" type="date" placeholder="дд.мм.гггг" >
+                </div>
+        
+              </div>
 
-            <div class="woocommerce-billing-fields__field-wrapper">
-              <p class="form-row "><label for="billing_first_name" class="">Имя
-                  заказчика&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span
-                  class="woocommerce-input-wrapper">
-                  <input type="text" class="input-text wooccm-required-field"
-                    name="billing_first_name" id="billing_first_name" placeholder="Введите имя" value="" data-required="1"
-                    autocomplete="given-name"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-phone wooccm-type-tel validate-required validate-phone"
-                id="billing_phone_field" data-priority="20"><label for="billing_phone" class="">Телефон
-                  заказчика&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span
-                  class="woocommerce-input-wrapper"><input type="tel" class="input-text wooccm-required-field"
-                    name="billing_phone" id="billing_phone" placeholder="Для уточнения заказа" value=""
-                    data-required="1" autocomplete="tel" aria-describedby="billing_phone-description"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm11 wooccm-type-select"
-                id="billing_wooccm11_field" data-priority="30"><label for="billing_wooccm11" class="">Как лучше с Вами
-                  связаться?&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><select name="billing_wooccm11" id="billing_wooccm11"
-                    class="select " data-required="0" data-placeholder="">
-                    <option value="напишите мне в WhatsApp" selected="selected">напишите мне в WhatsApp</option>
-                    <option value="позвоните мне по телефону">позвоните мне по телефону</option>
-                  </select></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm12 wooccm-type-date"
-                id="billing_wooccm12_field" data-priority="40"><label for="billing_wooccm12" class="">Укажите дату
-                  доставки&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><input type="date" class="input-text " name="billing_wooccm12"
-                    id="billing_wooccm12" placeholder="" value="" data-required="0"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm13 wooccm-type-time"
-                id="billing_wooccm13_field" data-priority="50"><label for="billing_wooccm13" class="">Желаемое время
-                  доставки&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><input type="time" class="input-text " name="billing_wooccm13"
-                    id="billing_wooccm13" placeholder="" value="" data-required="0"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm14 wooccm-type-text"
-                id="billing_wooccm14_field" data-priority="60"><label for="billing_wooccm14" class="">Имя
-                  получателя&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm14"
-                    id="billing_wooccm14" placeholder="Введите имя" value="" data-required="0"></span></p>
+              <div class="form-row ">
+                <label for="billing_first_name3">Укажите время доставки&nbsp;</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                <input name="billing_first_name3" id="billing_first_name3" class="price__max-input" type="time" placeholder="-- :--" >
+                </div>
+        
+              </div>
+              <div class="form-row ">
+                <label for="billing_first_name4">Имя получателя&nbsp;</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                <input name="billing_first_name4"   id="billing_first_name4" class="price__max-input" type="text"  placeholder="Введите имя" >
+                </div>
+              </div>
+          </div>
+          <div class="ordering__col2">
+            <div class="form-row ">
+              <label for="billing_first_name5">Телефон получателя</label>
+              <div class="price__max ordering__col1-inputWrapper">
+              <input name="billing_first_name5" id="billing_first_name5" class="price__max-input" type="text" placeholder="+7 (000) 000 00 00" >
+              </div>
+            </div>
+            <div class="form-row ">
+              <label for="billing_first_name6">Адрес доставки</label>
+              <div class="price__max ordering__col1-inputWrapper">
+              <input name="billing_first_name6" id="billing_first_name6" class="price__max-input" type="text" placeholder="Город, улица, дом, квартира" >
+              </div>
             </div>
 
-                   <div>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm15 wooccm-type-text"
-                id="billing_wooccm15_field" data-priority="70"><label for="billing_wooccm15" class="">Телефон
-                  получателя&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm15"
-                    id="billing_wooccm15" placeholder="+7 (000) 000 00 00" value="" data-required="0"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm16 wooccm-type-text"
-                id="billing_wooccm16_field" data-priority="80"><label for="billing_wooccm16" class="">Адрес
-                  доставки&nbsp;</label><span
-                  class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_wooccm16"
-                    id="billing_wooccm16" placeholder="Город, улица, дом, квартира" value="" data-required="0"></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm18 wooccm-type-checkbox"
-                id="billing_wooccm18_field" data-priority="90"><span class="woocommerce-input-wrapper"><label
-                    class="checkbox " data-required="0">
-                    <input type="checkbox" class="input-checkbox " name="billing_wooccm18" id="billing_wooccm18"
-                      value="1"> Нужна открытка?(+70 руб.)&nbsp;<span
-                      class="optional">(необязательно)</span></label></span></p>
-              
-              <p class="form-row form-row-wide wooccm-field wooccm-field-wooccm17 wooccm-type-textarea"
-                id="billing_wooccm17_field" data-priority="110"><label for="billing_wooccm17" class="">Ваши пожелания к
-                  заказу&nbsp;<span class="optional">(необязательно)</span></label><span
-                  class="woocommerce-input-wrapper"><textarea name="billing_wooccm17" class="input-text "
-                    id="billing_wooccm17" placeholder="Введите сообщение" rows="2" cols="5" data-required="0"></textarea></span></p>
-              <p class="form-row form-row-wide wooccm-field wooccm-field-email wooccm-type-email validate-email"
-                id="billing_email_field" data-priority="120"><label for="billing_email" class="">Ваш Email&nbsp;<span
-                    class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><input
-                    type="email" class="input-text " name="billing_email" id="billing_email"
-                    placeholder="нужен только для регистрации" value="" data-required="0" autocomplete="email username"
-                    aria-describedby="billing_email-description"><span class="description"
-                    id="billing_email-description" aria-hidden="true">нужен только для регистрации</span></span></p>
+            <div class="checkbox">
+              <input class="custom-checkbox" type="checkbox" name="billing_first_name7"  id="billing_first_name7" >
+              <label for="billing_first_name7">Нужна открытка?(+70 руб.)</label>
+            </div>
 
-                    <p class="form-row form-row-wide create-account woocommerce-validated">
-                      <label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-                        <input class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox"
-                          id="createaccount" type="checkbox" name="createaccount" value="1"> <span>Зарегистрировать вас?</span>
-                      </label>
-                    </p>
-                    <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Подтвердить заказ" data-value="Подтвердить заказ">Подтвердить заказ</button>
+     
+                <div class="form-row">
+                  <label for="billing_first_name8">Ваши пожелания к заказу</label>
+
+             
+                    <textarea name="billing_first_name8" id="billing_first_name8" class="custom-textarea" placeholder="Введите сообщение" rows="5" cols="5"></textarea>
+            
+                
+                </div>
+       
+              <div class="form-row ">
+                <label for="billing_first_name9">Ваш email(необязательно)</label>
+                <div class="price__max ordering__col1-inputWrapper">
+                <input name="billing_first_name9" id="billing_first_name9" class="price__max-input" type="text" placeholder="Нужен только для регистрации" >
+                </div>
+              </div>
+              <div class="checkbox__registration">
+                <input class="custom-checkbox" id="billing_first_name10" type="checkbox"  name="billing_first_name10" >
+                <label for="billing_first_name10">Зарегистрировать вас?</label>
+              </div>
+              <a href="#" class="btn btn-gradient">Подтвердить заказ</a></div>
           </div>
 
-          </div>
-        </div>
 
+        
 
+<p class="confirm-text">Нажмите на кнопку «Подтвердить заказ», чтобы оформить заказ. После этого наш менеджер свяжется с Вами 
+  для уточнения заказа. Счёт на оплату менеджер также выставит. Ожидайте и будьте на связи, пожалуйста!
+  </p>
       </div>
     </div>
   </section>
@@ -426,7 +454,7 @@
     <div class="container">
       <div class="footer__content">
         <div class="footer__col footer__col-20">
-          <a class="footer__logo" href="/"><img width="117" src="/img/logo.svg"></a>
+          <a class="footer__logo" href="/"><img width="117" src="img/logo.svg"></a>
           <p><a href="#" class="footer__link">Выберите город.</a> (Внимание! Возможна только доставка - самовывоза нет)
           </p>
         </div>
@@ -482,7 +510,7 @@
 
         <div class="footer__col footer__col-20">
 
-          <img class="footer__ukassa" src="/img/cassa.png" alt="ю-касса">
+          <img class="footer__ukassa" src="img/cassa.png" alt="ю-касса">
           <p class="footer__politic">© 2023 Доставка премиум букетов<br> «Название». Все права защищены.<br> Копирование
             информации запрещено.</p>
         </div>
@@ -495,9 +523,114 @@
 
 
 
+  <!--модальное окно городов-->
+<!--modal-city-->
+<div class="modal">
+  <div class="modal__dialog">
+  <div class="pum-content ">
+    <div class="pum-title">
+      Выберите город доставки: </div>
+    <p><span>Начните вводить название города, а мы вам подскажем</span><br>
+      <input class="field-gorod" id="field-gorod" type="text" placeholder="Введите название города"></p>
+    <div class="simple-content">
+      <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+      <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+      <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+      <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+      <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+      <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+      <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+      <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+      <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+      <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+      <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+      <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+    </div>
+    <button class="modal__close" data-close><svg xmlns="http://www.w3.org/2000/svg" fill="#cc9744" 
+      viewBox="0 0 24 24">
+      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+  </button>
+  </div>
+</div>
+
+ 
+
+</div>
 
 
+<!--модальное окно корзины-->
+<!--modal-basket.css-->
+<div class="modal" ><!--добавить класс show и отобразиться-->
+<div class="modal__dialog">
+  <div class="basket-modal" >
 
+  <div class="basket-modal__content">
+    <div class="basket-modal__title">
+      Корзина </div>
+    <div class="good">
+      <img class="good-img" src="img/product-1.jpg">
+      <div class="good__text">
+        <a href="#" class="good__title">Букет Pink Garden S
+        </a>
+        <div class="good__price"><span>1</span> * <span>2500</span><span
+            class="woocommerce-Price-currencySymbol">₽</span></div>
+      </div>
+    </div>
+    <div class="basket-modal__total">Подытог: <span>2 500 </span><span
+        class="woocommerce-Price-currencySymbol">₽</span></div>
+
+    <div class="basket-modal__btn">
+      <a href="/podobrat/" class="btn btn-gradient">Просмотр корзины</a>
+      <a href="/podobrat/" class="btn btn-light">Оформление заказа</a>
+    </div>
+
+    <button class="modal__close" data-close><svg xmlns="http://www.w3.org/2000/svg" fill="#cc9744" 
+      viewBox="0 0 24 24">
+      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+  </button>
+  </div>
+
+</div>
+</div>
+
+</div>
 
   <script src="js/main.js"></script>
 </body>

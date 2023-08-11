@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title></title>  
+    <link rel="stylesheet" href="css/style-general.css">
     <link rel="stylesheet" href="css/modal-city.css">
+    <link rel="stylesheet" href="css/modal-basket.css">
     <link rel="stylesheet" href="css/style1-wrapper.css">
     <link rel="stylesheet" href="css/style2-header-wrapper.css">
     <link rel="stylesheet" href="css/style3-main.css">
@@ -15,9 +17,14 @@
     <link rel="stylesheet" href="css/style6-delivery.css">
     <link rel="stylesheet" href="css/style7-reviews.css">
     <link rel="stylesheet" href="css/style8-footer.css">
-    <link rel="stylesheet" href="css/_prodact-card/product-card.css">
-
- 
+    <link rel="stylesheet" href="css/_prodact-card/product-block.css">
+    <link rel="stylesheet" href="css/_prodact-card/similarProducts.css">
+    <link rel="stylesheet" href="css/_prodact-card/viewedProducts.css">
+    <link rel="stylesheet" href="css/_basket/basket.css">
+    <link rel="stylesheet" href="css/_catalog/catalog.css">
+    <link rel="stylesheet" href="css/_otzivi/otzivi.css">
+    <link rel="stylesheet" href="css/oplata_dostavka/oplata_dostavka.css">
+    <link rel="stylesheet" href="css/ordering/ordering.css">
 </head>
 <body>
 
@@ -257,7 +264,8 @@
   </a></nav>
   <div class="product-images">
       <div class="product-gallery"></a>
-        <a href="#"><img src="/img/product-1.jpg" alt="product"></a>
+        <a href="#"><img src="img/product-1.jpg" alt="product"></a>
+
       </div>
   </div>
   <div class="product__info">
@@ -287,17 +295,7 @@
           <button type="button" class="quantity-plus"></button>	
         </div>
         
-        <button class="quantity__heart">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
-          <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
-          <defs>
-            <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#C38B34"/>
-              <stop offset="1" stop-color="#ECC47E"/>
-            </linearGradient>
-          </defs>
-          </svg>
-        </button>
+
     </div>
     <div class="product__btn-flex">
       <a type="submit" name="add-to-cart" value="2954" class="btn product__btn-light btn-gradient">В корзину</a>
@@ -392,14 +390,68 @@
       
 </section>
 
-
+<!--_product-card/similarProducts-->
 <section class="similarProducts section">
   <div class="container">
     <h1 class="product__title similarProducts__title">Похожие товары</h1>
     <div class="similarProducts__wrapper">
-      <div class="similarProducts__item">
+      <div class="similarProducts__item catalog__item-body">
         <div class="similarProducts__item-img">
-          <img src="/img/similarProducts__item.jpg" alt="none">
+          <img src="img/similarProducts__item.jpg" alt="none">
+          <button class="quantity__heart similarProducts__svg-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+              </svg>
+          </button>
+        </div>
+        <a href="#" class="similarProducts__item-title">
+          Утро над Вайт-Ривер S
+        </a>
+        <span class="similarProducts__item-price">
+          4 500р
+        </span>
+        <a href="#" class=" similarProducts__btn">В корзину</a>
+      </div>
+      <div class="similarProducts__item catalog__item-body">
+        <div class="similarProducts__item-img">
+          <img src="img/similarProducts__item.jpg" alt="none">
+          <button class="quantity__heart similarProducts__svg-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+              </svg>
+          </button>
+        </div>
+        <a href="#" class="similarProducts__item-title">
+          Утро над Вайт-Ривер S
+        </a>
+        <span class="similarProducts__item-price">
+          4 500р
+        </span>
+        <a href="#" class=" similarProducts__btn">В корзину</a>
+      </div>
+    
+    
+      <div class="similarProducts__item catalog__item-body">
+        <div class="similarProducts__item-img">
+          <img src="img/similarProducts__item.jpg" alt="none">
+          <button class="quantity__heart similarProducts__svg-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+              </svg>
+          </button>
+        </div>
+        <a href="#" class="similarProducts__item-title">
+          Утро над Вайт-Ривер S
+        </a>
+        <span class="similarProducts__item-price">
+          4 500р
+        </span>
+        <a href="#" class=" similarProducts__btn">В корзину</a>
+      </div>
+    
+      <div class="similarProducts__item catalog__item-body">
+        <div class="similarProducts__item-img">
+          <img src="img/similarProducts__item.jpg" alt="none">
           <button class="quantity__heart similarProducts__svg-active">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
               <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
@@ -416,72 +468,19 @@
       </div>
 
 
-      <div class="similarProducts__item">
-        <div class="similarProducts__item-img">
-          <img src="/img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
-
-
-      <div class="similarProducts__item">
-        <div class="similarProducts__item-img">
-          <img src="/img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
-
-
-      <div class="similarProducts__item">
-        <div class="similarProducts__item-img">
-          <img src="/img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
     </div>
   </div>
 </section>
 
+
+<!--_product-card/viewedProducts-->
 <section class="viewedProducts section">
   <div class="container">
       <div class="block__title block__title-titlelight"><h2>Недавно просмотренные товары</h2></div>
       <div class="viewedProducts__wrapper">
         <div class="similarProducts__item viewedProducts__item">
           <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="/img/viewedProducts__flowers.png" alt="none">
+            <img src="img/viewedProducts__flowers.png" alt="none">
             <button class="quantity__heart similarProducts__svg-active">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
               <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
@@ -507,7 +506,7 @@
         </div>
         <div class="similarProducts__item viewedProducts__item">
           <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="/img/viewedProducts__flowers.png" alt="none">
+            <img src="img/viewedProducts__flowers.png" alt="none">
             <button class="quantity__heart similarProducts__svg-active">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
               <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
@@ -535,7 +534,7 @@
 
         <div class="similarProducts__item viewedProducts__item">
           <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="/img/viewedProducts__flowers.png" alt="none">
+            <img src="img/viewedProducts__flowers.png" alt="none">
             <button class="quantity__heart similarProducts__svg-active">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
               <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
@@ -585,7 +584,7 @@
       </div>
     
       <div  class="delivery__img">
-        <img src="/img/woman.png" alt="доставка">
+        <img src="img/woman.png" alt="доставка">
       </div>
         </div>
     
@@ -605,7 +604,7 @@
 
           
          <div class="footer__col footer__col-20">
-              <a class="footer__logo" href="/"><img width="117" src="/img/logo.svg"></a>
+              <a class="footer__logo" href="/"><img width="117" src="img/logo.svg"></a>
               <p><a href="#" class="footer__link">Выберите город.</a> (Внимание! Возможна только доставка - самовывоза нет)
               </p>
             </div>
@@ -656,7 +655,7 @@
           
           <div class="footer__col footer__col-20">
 
-            <img class="footer__ukassa" src="/img/cassa.png" alt="ю-касса">
+            <img class="footer__ukassa" src="img/cassa.png" alt="ю-касса">
             <p class="footer__politic">© 2023 Доставка премиум букетов<br> «Название». Все права защищены.<br> Копирование информации запрещено.</p>
           </div>
           </div>

@@ -12,11 +12,14 @@
   -webkit-text-fill-color: transparent;
 }
 .ordering .good-number {
-  font-size: 20px;
+  font-size: calc(16px + 4 * (100vw - 400px) / 1920);
   font-weight: 600;
 }
+.ordering .good__price {
+  font-size: calc(18px + 12 * (100vw - 400px) / 1920);
+}
 .ordering__preview {
-  background-image: url(/img/ordering-bg.jpg);
+  background-image: url(../../img/ordering-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,7 +40,7 @@
   gap: 1rem;
 }
 
-.input, input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+.input {
   padding: 0.375em 0.75em;
   line-height: 1.5;
   color: #111;
@@ -59,4 +62,131 @@
 
 .woocommerce .woocommerce-checkout .woocommerce-additional-fields .form-row .input-text, .woocommerce .woocommerce-checkout .woocommerce-billing-fields .form-row .input-text, .woocommerce .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row .input-text, .woocommerce-EditAccountForm .form-row .input-text, .woocommerce-account .woocommerce-ResetPassword .woocommerce-form-row .woocommerce-Input, .woocommerce-account .woocommerce-form-login .woocommerce-form-row .woocommerce-Input, .woocommerce-account .woocommerce-form-register .woocommerce-form-row .woocommerce-Input, .woocommerce-address-fields .form-row .input-text {
   padding: 0.575em 0.95em;
+}
+
+.ordering {
+  background-image: url(../../img/ordering__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ordering__preview {
+  margin-bottom: 65px;
+}
+.ordering__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(10px + 72 * (100vw - 400px) / 1920);
+}
+.ordering__col1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.ordering__col1 p {
+  color: #000;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.ordering__col2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.ordering__col2 .checkbox {
+  margin-bottom: 20px;
+}
+.ordering__col2 .checkbox__registration {
+  margin-bottom: 50px;
+}
+.ordering__col1-inputWrapper {
+  height: 58px;
+  margin-top: 15px;
+}
+.ordering__col1-contactYou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  height: 88px;
+}
+.ordering__col1-item p {
+  color: #a7a4a5;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 12px;
+}
+.ordering__col1-item div {
+  margin-bottom: 5px;
+  width: 63px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  border: 0.2px solid #a7a4a5;
+  background: #fff;
+}
+.ordering__col1-item div:hover {
+  border: 0.2px solid #C38B34;
+}
+.ordering .confirm-text {
+  font-size: calc(16px + 4 * (100vw - 400px) / 1920);
+  font-weight: 400;
+  margin-top: calc(20px + 20 * (100vw - 400px) / 1920);
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+.form-row label {
+  display: inline-block;
+  color: #000;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 16px;
+  display: block;
+}
+.form-row .custom-textarea {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 0.2px solid #a7a4a5;
+  font-size: 14px;
+  color: #a7a4a5;
+  margin-top: 15px;
+  resize: none;
+  height: 118px;
+}
+
+@media (max-width: 880px) {
+  .ordering__preview {
+    padding: 15px;
+  }
+  .ordering__preview .good {
+    padding: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .ordering__preview .good-img {
+    width: 66px;
+  }
+}
+@media (max-width: 680px) {
+  .ordering .basket__goods {
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .ordering__body {
+    display: block;
+  }
 }/*# sourceMappingURL=ordering.css.map */
