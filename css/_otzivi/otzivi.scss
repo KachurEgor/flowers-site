@@ -70,9 +70,8 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 44px;
+ padding: calc(20px + 24 * (100vw - 400px) / 1920);
   color: #fff;
-
   font-size: calc(16px + 9 * (100vw - 400px) / 1920);
   font-weight: 400;
   line-height: normal;
@@ -83,4 +82,7 @@ margin-bottom:  calc(40px + 55 * (100vw - 400px) / 1920);
     margin-bottom: 40px;
     max-width: 800px;
   }
+}
+.otzivi__btn-midle{
+  text-align: center;
 }

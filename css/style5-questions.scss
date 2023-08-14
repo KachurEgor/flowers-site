@@ -18,15 +18,14 @@
 
 .block-content {
   display: none;
-  
   margin: 0;
   list-style: none;
   padding-left: 20px;
 }
 
-#block1 .title, #block2 .title, #block3 .title {
+#block1 .title, #block2 .title, #block3 .title, #block4 .title {
   font-size: calc(14px + 4 * (100vw - 400px) / 1920);
-
+  width: 100%;
   cursor: pointer;
 }
 
@@ -35,10 +34,9 @@
 .block-content.open {
   display: block;
   margin-bottom: 20px;
-
   font-size: calc(14px + 2 * (100vw - 400px) / 1920);
-color:#fff;
-font-weight: 400;
+  color:#fff;
+  font-weight: 400;
 }
 
 

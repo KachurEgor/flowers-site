@@ -25,6 +25,20 @@ margin: auto;
   }
 }
 .basket-modal__content {
+  -webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {opacity:0} 
+  to { opacity:1}
+}
+
+@keyframes animatetop {
+  from { opacity:0}
+  to { opacity:1}
 }
 .basket-modal__title {
   font-size: calc(20px + 10 * (100vw - 400px) / 1920);

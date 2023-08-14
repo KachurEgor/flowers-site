@@ -54,6 +54,7 @@ margin-left: 4px;
 }
 
 .dropdown{
+  transition-property: block;
   
   &__svg{
     display: inline-block;
@@ -64,6 +65,7 @@ margin-left: 4px;
   }
   position: relative;
   outline: none;
+
   
   &__item{
     
@@ -74,6 +76,7 @@ margin-left: 4px;
     display: block;
     font-size: 12px;
     width: 165px;
+    transition: none;
     &:hover  
   
 {
@@ -89,16 +92,24 @@ margin-left: 4px;
   }
 
 &-content{
-  display: none;
   position: absolute;
-  //margin-top: 10px;
+  opacity: 0; /* По умолчанию скрываем подменю */
+    visibility: hidden;
+    transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
+    transition-duration: 0.02s; /* Добавляем анимацию пропадания 0.3 сек. */
+    //transition-delay: 0.7s; /* Добавляем задержку появления в 0.15 сек. */
   padding-top: 15px;
   z-index: 2;
 }
 }
 
 /* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  transition-property:display;
+  opacity: 1; /* Показываем подменю при ховере */
+  visibility: visible;
+  transition:1s; /* время аниамции */
+}
 
 
 
@@ -107,6 +118,7 @@ margin-left: 4px;
   .header{
     &__soc{
       display: block;
+      
     }
   }
   }
@@ -167,7 +179,6 @@ width: auto;}
         .dropdown-content {
          padding: 0;
           position:relative;
-         
       }
         }
         .header__burger {
@@ -220,11 +231,7 @@ width: auto;}
          // width: 100%;
           //height: 100%;
           padding: 50px 10px 0px 10px;
-          transition: all 0.3s ease 0s;
-          -webkit-transition: all 0.3s ease 0s;
-          -moz-transition: all 0.3s ease 0s;
-          -ms-transition: all 0.3s ease 0s;
-          -o-transition: all 0.3s ease 0s;
+       
         }
         .header__menu.active {
           top: 0;

@@ -10,8 +10,6 @@ $text-color_black: #000;
 $text-active: #cc9744;
 $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
 
-
-
 .catalog {
   background-image: url(../../img/catalpg-bg.jpg);
   background-repeat: no-repeat;
@@ -92,6 +90,7 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   display: flex;
   justify-content: center;
   gap: 30px;
+  
 }
 
 .catalog__wrapper {
@@ -155,6 +154,16 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
       border: 0.2px solid $text-color_dark;
       font-size: 14px;
       color: $text-color_dark;
+
+    }
+    input:active {
+      border: 0.2px solid $text-active;
+    }
+    :focus {
+      outline: none;
+  }
+    input:focus-visible {
+      border: 0.2px solid $text-active;
     }
   }
 
@@ -189,6 +198,10 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
 
   &__item-body {
     flex: 1 1 auto;
+    transition: 1s;
+  &:hover{
+    transform: scale(1.03);
+  }
   }
 
   // .similarProducts__item-img

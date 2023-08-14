@@ -62,8 +62,28 @@
           box-shadow: 0px 0px 30px 0px rgb(2, 2, 2);
   background-color: rgb(255, 255, 255);
   position: relative;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 
+@-webkit-keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .modal__dialog {
   max-width: 50%;
   margin: 10% auto;

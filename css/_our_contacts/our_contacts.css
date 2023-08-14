@@ -1,0 +1,122 @@
+.contacts {
+  background-image: url(/img/contacts__bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* &__cart:last-child {
+       background-image: url(/img/contacts__item-message.png);
+   }*/
+}
+.contacts__info {
+  line-height: normal;
+}
+.contacts p {
+  color: #fff;
+  font-family: "Open Sans light", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: calc(45px + 25 * (100vw - 400px) / 1920);
+}
+.contacts__carts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+}
+.contacts__cart {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/img/reviews-fon.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 2rem;
+  padding: 20px;
+  width: 395px;
+  border-radius: 5px;
+}
+@media (max-width: 450px) {
+  .contacts__cart {
+    width: auto;
+    gap: 1rem;
+  }
+  .contacts__cart .img-icon {
+    width: 85px;
+  }
+}
+.contacts__cart:last-child {
+  height: 150px;
+}
+.contacts__cart-title {
+  font-family: "Playfair Display Bold", serif;
+  font-size: calc(20px + 5 * (100vw - 400px) / 1920);
+  background: linear-gradient(211deg, #C38B34 27.99%, #ECC47E 80.38%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.contacts__cart-tel {
+  color: #fff;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: calc(16px + 2 * (100vw - 400px) / 1920);
+  text-decoration-line: underline;
+}
+.contacts__cart-online {
+  color: #fff;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.contacts__cart-online span {
+  color: #cc9744;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 14px;
+}
+.contacts__cart-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.contacts__cart-adres {
+  color: #fff;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: calc(16px + 2 * (100vw - 400px) / 1920);
+  margin-bottom: 10px;
+}
+.contacts__cart-description {
+  color: #cc9744;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: calc(12px + 2 * (100vw - 400px) / 1920);
+}
+.contacts__requisites p {
+  color: #000;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: 18px;
+  max-width: 430px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+.contacts__requisites-title {
+  color: #20191D;
+  font-family: "Playfair Display Bold", serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=our_contacts.css.map */

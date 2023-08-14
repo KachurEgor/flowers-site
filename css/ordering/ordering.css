@@ -164,6 +164,12 @@
   resize: none;
   height: 118px;
 }
+.form-row textarea:focus {
+  outline: none;
+}
+.form-row textarea:focus-visible {
+  border: 0.2px solid #cc9744;
+}
 
 @media (max-width: 880px) {
   .ordering__preview {

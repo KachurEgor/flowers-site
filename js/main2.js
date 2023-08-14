@@ -18,8 +18,10 @@ document.addEventListener('click', e => { //можно вешать и не на
   modalCloseBtn = document.querySelector('[data-close]');
 modalTrigger.forEach(btn => {
   btn.addEventListener('click', function() {
+   
 	  modal.classList.add('show');
 	  modal.classList.remove('hide');
+
 	  // Либо вариант с toggle - но тогда назначить класс в верстке
 	  //document.body.style.overflow = 'hidden';
 

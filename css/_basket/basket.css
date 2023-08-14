@@ -138,17 +138,6 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 .btn {
   border-radius: 5px;
   border: 1px solid rgb(204, 151, 68);
@@ -157,8 +146,8 @@ select {
   padding: 18px 40px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
 }
-
 .block__title h2 {
   font-family: "Playfair Display Bold", serif;
   font-size: calc(25px + 30 * (100vw - 400px) / 1920);
@@ -303,6 +292,7 @@ select {
   grid-row: row3-s/row3-s;
   background: none;
   border: none;
+  cursor: pointer;
 }
 .basket__item {
   grid-column: col1-s/col2-s;

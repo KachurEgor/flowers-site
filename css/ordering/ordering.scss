@@ -174,16 +174,22 @@ background-clip: text;
     }
     .custom-textarea{
         width: 100%;
-//height: 115px;
-    padding:20px;
-    border-radius: 5px;
-    border: 0.2px solid #a7a4a5;
-    font-size: 14px;
-    color: #a7a4a5;
-    margin-top: 15px;
-    resize: none;
-    height: 118px;
+        padding:20px;
+        border-radius: 5px;
+        border: 0.2px solid #a7a4a5;
+        font-size: 14px;
+        color: #a7a4a5;
+        margin-top: 15px;
+        resize: none;
+        height: 118px;
+
     }
+     textarea:focus {
+        outline: none;
+    }
+    textarea:focus-visible {
+        border: 0.2px solid $text-active;
+      }
   
 }
 

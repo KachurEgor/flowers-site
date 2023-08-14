@@ -82,6 +82,8 @@ html {
 a {
   color: #a7a4a5;
   text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 a:hover {
@@ -138,17 +140,6 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 .btn {
   border-radius: 5px;
   border: 1px solid rgb(204, 151, 68);
@@ -157,8 +148,10 @@ select {
   padding: 18px 40px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-
 .block__title h2 {
   font-family: "Playfair Display Bold", serif;
   font-size: calc(25px + 30 * (100vw - 400px) / 1920);
@@ -307,6 +300,8 @@ select {
 }
 
 .dropdown {
+  -webkit-transition-property: block;
+  transition-property: block;
   position: relative;
   outline: none;
 }
@@ -325,6 +320,8 @@ select {
   display: block;
   font-size: 12px;
   width: 165px;
+  -webkit-transition: none;
+  transition: none;
 }
 .dropdown__item:hover {
   background: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
@@ -335,15 +332,25 @@ select {
   color: #fff;
 }
 .dropdown-content {
-  display: none;
   position: absolute;
+  opacity: 0; /* По умолчанию скрываем подменю */
+  visibility: hidden;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
+  -webkit-transition-duration: 0.02s;
+          transition-duration: 0.02s; /* Добавляем анимацию пропадания 0.3 сек. */
   padding-top: 15px;
   z-index: 2;
 }
 
 /* Показать выпадающее меню при наведении курсора */
 .dropdown:hover .dropdown-content {
-  display: block;
+  -webkit-transition-property: display;
+  transition-property: display;
+  opacity: 1; /* Показываем подменю при ховере */
+  visibility: visible;
+  -webkit-transition: 1s;
+  transition: 1s; /* время аниамции */
 }
 
 @media (max-width: 1800px) {
@@ -441,11 +448,6 @@ select {
     overflow: auto;
     top: -100%;
     padding: 50px 10px 0px 10px;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
   }
   .header__menu.active {
     top: 0;

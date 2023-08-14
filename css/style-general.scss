@@ -102,6 +102,7 @@ html {
 a {
   color: $text-color_dark;
   text-decoration: none;
+  transition: 0.4s;
 }
 a:hover {
   color: $text-active;
@@ -149,14 +150,7 @@ select {
   font: inherit;
 }
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
+
 
 .btn {
   border-radius: 5px;
@@ -166,6 +160,12 @@ select {
   padding: 18px 40px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
+  transition: 1s;
+  &:hover{
+
+  }
+ 
 }
 
 .block__title h2 {
@@ -188,6 +188,7 @@ select {
   background-color: #fff;
   color: $text-active;
   border: 1px solid $text-active;
+
   &:hover 
 {
     background: $gradient-color;
@@ -198,10 +199,13 @@ select {
 .btn-gradient {
   background: $gradient-color;
   color: #fff;
+
+
   &:hover{
     background: #ffffff;
     color: $text-active;
     border: 1px solid $text-active;
+    
   }
 }
 .btn-stroke {
