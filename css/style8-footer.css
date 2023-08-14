@@ -82,6 +82,8 @@ html {
 a {
   color: #a7a4a5;
   text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 a:hover {
@@ -147,6 +149,8 @@ select {
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .block__title h2 {
   font-family: "Playfair Display Bold", serif;

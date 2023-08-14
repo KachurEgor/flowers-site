@@ -82,6 +82,8 @@ html {
 a {
   color: #a7a4a5;
   text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 a:hover {
