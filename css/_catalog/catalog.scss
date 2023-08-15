@@ -48,6 +48,7 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
     display: flex;
     justify-content: right;
     align-items: center;
+    justify-content: space-between;
     &__checkbox {
       display: flex;
       align-items: center;
@@ -134,6 +135,15 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
       border: 0.2px solid $text-color_dark;
       font-size: 14px;
       color: $text-color_dark;
+    }
+    input:active {
+      border: 0.2px solid $text-active;
+    }
+    :focus {
+      outline: none;
+  }
+    input:focus-visible {
+      border: 0.2px solid $text-active;
     }
   }
 
@@ -269,6 +279,9 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
     }
     .catalog-ordering {
       justify-content: space-between;
+      h3{
+        display: none;
+      }
       select {
         border: none;
         background: none;
