@@ -343,6 +343,14 @@ select {
   z-index: 2;
 }
 
+@media (max-width: 830px) {
+  .dropdown-content {
+    display: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
 /* Показать выпадающее меню при наведении курсора */
 .dropdown:hover .dropdown-content {
   -webkit-transition-property: display;

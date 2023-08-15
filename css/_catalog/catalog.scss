@@ -43,11 +43,13 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   }
 
   &-ordering {
+    font-size: calc(14px + 2 * (100vw - 400px) / 1920);
     text-align: right;
     margin-bottom: 30px;
     display: flex;
     justify-content: right;
     align-items: center;
+    justify-content: space-between;
     &__checkbox {
       display: flex;
       align-items: center;
@@ -104,7 +106,7 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
 
 .сatalog__range {
   //border-bottom: 1px dashed black;
-  margin-bottom: 20px;
+padding-bottom: 60px;
 }
 
 .title__filter {
@@ -134,6 +136,15 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
       border: 0.2px solid $text-color_dark;
       font-size: 14px;
       color: $text-color_dark;
+    }
+    input:active {
+      border: 0.2px solid $text-active;
+    }
+    :focus {
+      outline: none;
+  }
+    input:focus-visible {
+      border: 0.2px solid $text-active;
     }
   }
 
@@ -241,9 +252,11 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
     &__wrapper{
       max-width: 100%;
       display: none;  
+    
     }
     .active{
       display: block;
+      padding-bottom: 4%;
     }
     &__body{
       display: block;
@@ -256,19 +269,23 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
     }
     .select__wrapper{
       position: relative;
+      display: flex;
+      align-items: center;
     }
 
     .select__wrapper::before {
-      content: url('/img/filter2.svg');
+      content: url('../../img/filter2.svg');
       margin-right: 10px;
-     // position: absolute;
       top: 9px;
       left: 0px;
       width: 14px;
-      height: 12px;
+      //height: 12px;
     }
     .catalog-ordering {
       justify-content: space-between;
+      h3{
+        display: none;
+      }
       select {
         border: none;
         background: none;
@@ -291,50 +308,29 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
   .catalog__wrapper {
   }
   .catalog__wrapper-body {
-    margin-top: 40px;
+    
     grid-template-columns: [col1-s] minmax(126px, 200px) [col2-s] minmax(126px,200px);
     grid-column-gap: calc(20px + 75 * (100vw - 400px) / 760);
     justify-content: center;
   }
 }
 
+
+@media (max-width: 464px) {
+  .catalog {
+    &__wrapper{
+      max-width: 100%;
+      display: none;  
+      .btn{
+width: 100%;
+      }
+    }}
+  }
+
+
 .btn-block {
   margin-top: calc(30px + 30 * (100vw - 400px) / 1920);
-}
-.filter-range-wrapper {
-  margin-bottom: 10px;
-  padding: 29px 0;
-}
-
-.filter-range {
-  position: relative;
-}
-
-.filter-range-scale {
-  height: 2px;
-  border-radius: 60px;
-  background: rgba(61, 49, 55, 0.96);
-}
-
-.filter-range-bar {
-  height: 2px;
-  width: 75%;
-  background: $gradient-color;
-}
-
-.filter-range-handle {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  box-sizing: content-box;
-  padding: 0;
-  border-radius: 50%;
-  background: $gradient-color;
-  cursor: pointer;
-  border: none;
+  width: 100%;text-align: center;
 }
 
 .compound-form {
@@ -401,31 +397,7 @@ input:checked + label {
 }
 
 /* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 62px;
-  height: 32px;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 24px;
-  width: 24px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 
 input:checked + .slider {
   background: linear-gradient(211deg, #c38b34 27.99%, #ecc47e 80.38%);
@@ -442,13 +414,6 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 
 input[type="range"] {
   width: 100%;
@@ -481,3 +446,106 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 10px/100%;
   cursor: pointer;
 }
+
+
+
+
+@mixin range-slider($width, $height, $input-top, $input-bg-color, $input-thumb-color, $float:none, $input-height:20px, $input-border-radius:14px) {
+  position: relative;
+  width: $width;
+  height: $height;
+  float: $float;
+  text-align: center;
+  padding-top: 15px;
+    
+  input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+   background: none;
+    border: none;
+ 
+    left: 0;
+    //top: $input-top;
+    width: $width;
+    outline: none;
+    height: $input-height;
+    margin: 0;
+    padding: 0;
+  }  
+  
+  input[type="range"]::-webkit-slider-thumb {
+    bottom:3px;
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;    
+    -webkit-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border: none;
+    border-radius: $input-border-radius;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($input-thumb-color,60%)), color-stop(100%, $input-thumb-color)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* W3C */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border: none;
+    border-radius: $input-border-radius;
+    background-image: linear-gradient(to bottom, lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* W3C */
+  }
+
+  input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -ms-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border-radius: $input-border-radius;
+    border: 0;
+    background-image: linear-gradient(to bottom, lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* W3C */
+  }
+  
+  input[type=range]::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+  }
+  
+  input[type=range]:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+  } 
+  
+  input[type=range]::-moz-focus-outer {
+    border: 0;
+  }
+}
+
+section.range-slider {
+  @include range-slider(275px, auto, 50px, #F1EFEF,  #ce8715, left);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

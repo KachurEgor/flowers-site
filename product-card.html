@@ -1,740 +1,802 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title></title>  
-    <link rel="stylesheet" href="css/style-general.css">
-    <link rel="stylesheet" href="css/modal-city.css">
-    <link rel="stylesheet" href="css/modal-basket.css">
-    <link rel="stylesheet" href="css/style1-wrapper.css">
-    <link rel="stylesheet" href="css/style2-header-wrapper.css">
-    <link rel="stylesheet" href="css/style3-main.css">
-    <link rel="stylesheet" href="css/style4-catalog.css">
-    <link rel="stylesheet" href="css/style5-questions.css">
-    <link rel="stylesheet" href="css/style6-delivery.css">
-    <link rel="stylesheet" href="css/style7-reviews.css">
-    <link rel="stylesheet" href="css/style8-footer.css">
-    <link rel="stylesheet" href="css/_prodact-card/product-block.css">
-    <link rel="stylesheet" href="css/_prodact-card/similarProducts.css">
-    <link rel="stylesheet" href="css/_prodact-card/viewedProducts.css">
-    <link rel="stylesheet" href="css/_basket/basket.css">
-    <link rel="stylesheet" href="css/_catalog/catalog.css">
-    <link rel="stylesheet" href="css/_otzivi/otzivi.css">
-    <link rel="stylesheet" href="css/oplata_dostavka/oplata_dostavka.css">
-    <link rel="stylesheet" href="css/ordering/ordering.css">
-    <link rel="stylesheet" href="css/_our_contacts/our_contacts.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title></title>
+        <link rel="stylesheet" href="css/style-general.css">
+        <link rel="stylesheet" href="css/modal-city.css">
+        <link rel="stylesheet" href="css/modal-basket.css">
+        <link rel="stylesheet" href="css/style1-wrapper.css">
+        <link rel="stylesheet" href="css/style2-header-wrapper.css">
+        <link rel="stylesheet" href="css/style3-main.css">
+        <link rel="stylesheet" href="css/style4-catalog.css">
+        <link rel="stylesheet" href="css/style5-questions.css">
+        <link rel="stylesheet" href="css/style6-delivery.css">
+        <link rel="stylesheet" href="css/style7-reviews.css">
+        <link rel="stylesheet" href="css/style8-footer.css">
+        <link rel="stylesheet" href="css/_prodact-card/product-block.css">
+        <link rel="stylesheet" href="css/_prodact-card/similarProducts.css">
+        <link rel="stylesheet" href="css/_prodact-card/viewedProducts.css">
+        <link rel="stylesheet" href="css/_basket/basket.css">
+        <link rel="stylesheet" href="css/_catalog/catalog.css">
+        <link rel="stylesheet" href="css/_otzivi/otzivi.css">
+        <link rel="stylesheet" href="css/oplata_dostavka/oplata_dostavka.css">
+        <link rel="stylesheet" href="css/ordering/ordering.css">
+        <link rel="stylesheet" href="css/_our_contacts/our_contacts.css">
+    </head>
+    <body>
 
 
-  <!--style1-wrapper-->
-<div class="wrapper">
-    <header class="header">
-        <div class="container">
-            <div class="header__body">
-      <ul class="header__list">
-                        <li> <a href="#" class="header__link">Подобрать</a></li>
-                        <li> <a href="#" class="header__link">Отзывы</a></li>
-                        <li> <a href="#" class="header__link">Доставка</a></li>
-                        <li> <a href="#" class="header__link">Контакты</a></li>
-                    </ul>
-                    <form id="demo-b">
-                      <input type="search" class="search" placeholder="Поиск по сайту">
+        <!--style1-wrapper-->
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <ul class="header__list">
+                            <li>
+                                <a href="#" class="header__link">Подобрать</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <form id="demo-b">
+                            <input type="search" class="search" placeholder="Поиск по сайту">
+                        </form>
+                        <div class="header__soc">
+                            <a data-modal class="header__callback header__firminfo" href="#">
+                                <img src="img/geo.svg" alt="geo">
+                                <div class="header__callback-geomarcker">Екатеринбург</div>
+                            </a>
+
+                            <div class="header__phone header__firminfo">
+                                <img src="img/tel.svg" alt="tel">
+                                <a class="header__phone-link" href="tel:89500265041">8 950 026 50 41</a>
+                            </div>
+
+                        </div>
+
+                        <div class="header__socials">
+                            <a class="header__socials-inst" href="#" target="_blank"><img src="img/inst.svg" alt="инстаграм"></a>
+                            <a class="header__socials-telegram" href="#" target="_blank"><img src="img/telegr.svg" alt="телеграм"></a>
+                            <a class="header__socials-vk" href="#" target="_blank"><img src="img/vk.svg" alt="вк"></a>
+                            <a class="header__socials-whatsapp" href="#" target="_blank"><img src="img/whatsap.svg" alt="вотсап"></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+        </div>
+
+
+        <!--style2-header-wrapper-->
+        <div class="header-wrapper">
+            <div class="container">
+                <div
+                    class="header__bottom">
+                    <!-- Logo -->
+                    <a class="header__logo" href="/"><img width="110" src="img/logo.svg" alt="логотип"></a>
+
+
+                    <!-- Menu -->
+                    <nav class="nav">
+                        <ul class="header__menu">
+
+                            <li class="header__menu-item dropdown">
+                                <a href="#">Розы
+                                    <div class="dropdown__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                            <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__item" href="#">Одноголовые</a>
+                                    <a class="dropdown__item" href="#">Кустовые</a>
+                                </div>
+                            </li>
+
+                            <li class="header__menu-item dropdown">
+                                <a href="#">Сборные
+                                    <div class="dropdown__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                            <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__item" href="#">С розами</a>
+                                    <a class="dropdown__item" href="#">С кустовыми розами</a>
+                                    <a class="dropdown__item" href="#">С герберами</a>
+                                    <a class="dropdown__item" href="#">С лилиями</a>
+                                    <a class="dropdown__item" href="#">С хризантемами</a>
+                                    <a class="dropdown__item" href="#">С орхидеями</a>
+                                    <a class="dropdown__item" href="#">С альстрометриями</a>
+                                    <a class="dropdown__item" href="#">С гартензиями</a>
+                                    <a class="dropdown__item" href="#">С ирисами</a>
+                                    <a class="dropdown__item" href="#">С гвоздиками</a>
+                                    <a class="dropdown__item" href="#">С эустомой</a>
+                                    <a class="dropdown__item" href="#">С ромашками</a>
+                                    <a class="dropdown__item" href="#">С тюльпанами</a>
+
+                                </div>
+                            </li>
+                            <li class="header__menu-item dropdown">
+                                <a href="#">Монобукеты
+                                    <div class="dropdown__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                            <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__item" href="#">Одноголовые</a>
+                                    <a class="dropdown__item" href="#">Кустовые</a>
+                                </div>
+                            </li>
+
+                            <li class="header__menu-item dropdown">
+                                <a href="#">Цветочные композиции
+                                    <div class="dropdown__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                            <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__item" href="#">Одноголовые</a>
+                                    <a class="dropdown__item" href="#">Кустовые</a>
+                                </div>
+                            </li>
+
+                            <li class="header__menu-item dropdown">
+                                <a href="#">Съедобные композиции
+                                    <div class="dropdown__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                            <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown__item" href="#">Одноголовые</a>
+                                    <a class="dropdown__item" href="#">Кустовые</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+
+
+                    <div class="header__card">
+                        <a class="header__card-item" href="#">
+                            <img src="img/like.svg" alt="like"><span>Избранное
+                            </span>
+                            <strong class="total_count">
+                                (12)</strong>
+                        </a>
+
+                        <a class="header__card-item" href="#">
+                            <img src="img/card.svg" alt="card"><span>Корзина</span>
+                            <strong class="total_count">
+                                (0)</strong>
+                        </a>
+                    </div>
+
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+
+                </div>
+                <nav id="site-navigation-mobile" class="main-navigation fixed">
+                    <div class="main-navigation-inner full">
+                        <div>
+                            <ul id="header_menu" class="menu">
+                                <li class="header__menu-item dropdown">
+                                    <a href="#">Съедобные композиции
+                                        <div class="dropdown__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content show">
+                                        <a class="dropdown__item" href="#">Одноголовые</a>
+                                        <a class="dropdown__item" href="#">Кустовые</a>
+                                    </div>
+                                </li>
+
+                                <li class="header__menu-item dropdown">
+                                    <a href="#">Съедобные композиции
+                                        <div class="dropdown__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content show">
+                                        <a class="dropdown__item" href="#">Одноголовые</a>
+                                        <a class="dropdown__item" href="#">Кустовые</a>
+                                    </div>
+                                </li>
+
+
+                                <li class="header__menu-item dropdown">
+                                    <a href="#">Съедобные композиции
+                                        <div class="dropdown__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content show">
+                                        <a class="dropdown__item" href="#">Одноголовые</a>
+                                        <a class="dropdown__item" href="#">Кустовые</a>
+                                    </div>
+                                </li>
+
+                                <li class="header__menu-item dropdown">
+                                    <a href="#">Съедобные композиции
+                                        <div class="dropdown__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content show">
+                                        <a class="dropdown__item" href="#">Одноголовые</a>
+                                        <a class="dropdown__item" href="#">Кустовые</a>
+                                    </div>
+                                </li>
+                                <li class="header__menu-item dropdown">
+                                    <a href="#">Съедобные композиции
+                                        <div class="dropdown__svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewbox="0 0 6 5" fill="none">
+                                                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-content show">
+                                        <a class="dropdown__item" href="#">Одноголовые</a>
+                                        <a class="dropdown__item" href="#">Кустовые</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--css/_product-card/product-block.css-->
+        <section class="section product-block">
+            <div class="container">
+
+                <div class="product">
+                    <nav class="breadcrumb breadcrumb-active breadcrumb-active-mobile">
+                        <a href="#">Главная</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a href="#">Сборные букеты</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a class="breadcrumb-active" href="#">Букет Pink Garden S
+                        </a>
+                    </nav>
+                    <div class="product-images">
+                        <div class="product-gallery"></a>
+                        <a href="#"><img src="img/product-1.jpg" alt="product"></a>
+
+                    </div>
+                </div>
+                <div class="product__info">
+
+                    <nav class="breadcrumb breadcrumb-active breadcrumb-active-notMobile">
+                        <a href="#">Главная</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a href="#">Сборные букеты</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a class="breadcrumb-active" href="#">Букет Pink Garden S
+                        </a>
+                    </nav>
+                    <!-- <div class="product-images">
+                            <div class="product-gallery"></a>
+                              <a href="#"><img src="/img/product-1.jpg" alt="product"></a>
+                            </div>
+                        </div> -->
+                    <h1 class="product__title">Букет Pink Garden S
+                    </h1>
+                    <div class="product__meta">
+                        <span class="product__meta-art">Артикул:
+                            <span>00348</span>
+                        </span>
+                        <span class="product__meta-kat">Категория:
+                            <a href="#">Сборные букеты</a>
+                        </span>
+                        <span class="product__meta-metki">Метки:
+                            <a href="#">С розами</a>
+                        </span>
+                    </div>
+
+                    <form class="product__cart" action="#">
+
+                        <div class="quantity">
+                            <span>2 500 &#8381</span>
+                            <div class="quantity__input">
+                                <button type="button" class="quantity-minus"></button>
+                                <input type="number" id="quantity_64cf5cac05243" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" placeholder="" inputmode="numeric">
+                                <button type="button" class="quantity-plus"></button>
+                            </div>
+
+
+                        </div>
+                        <div class="product__btn-flex">
+                            <a type="submit" name="add-to-cart" value="2954" class="btn product__btn-light btn-gradient">В корзину</a>
+                            <a class="btn product__btn-dark btn-stroke">Купить в 1 клик</a>
+                        </div>
+
                     </form>
-                <div class="header__soc">
-                  <a data-modal  class="header__callback header__firminfo" href="#">
-                     <img src="img/geo.svg" alt="geo">
-                      <div class="header__callback-geomarcker">Екатеринбург</div>
-                  </a>
-  
-                  <div class="header__phone header__firminfo">  <img src="img/tel.svg" alt="tel">
-                      <a class="header__phone-link" href="tel:89500265041">8 950 026 50 41</a>
-                  </div>
-  
-  </div>
+                </div>
 
-                <div class="header__socials">
-                    <a class="header__socials-inst" href="#" target="_blank"><img src="img/inst.svg"  alt="инстаграм" ></a>                    
-                    <a class="header__socials-telegram" href="#" target="_blank"><img src="img/telegr.svg"  alt="телеграм" ></a>
-                    <a class="header__socials-vk" href="#" target="_blank"><img src="img/vk.svg"  alt="вк" ></a>
-                    <a class="header__socials-whatsapp" href="#" target="_blank"><img src="img/whatsap.svg"  alt="вотсап" ></a>
-                                                            
-                  
-                  </div>
+            </div>
+            <div class="woocommerce-tabs wc-tabs-wrapper">
+                <ul class="tabs wc-tabs" role="tablist">
+                    <li class="description_tab active" id="tab-title-description" role="tab" aria-controls="tab-description">
+                        <a href="#tab-description">Описание</a>
+                    </li>
+                </ul>
+                <div class="product__description">
+                    <p>Нежный садовый букет с очаровательным составом: кустовые розы, ароматный пион, стойкие колокольчики альстромерий, воздушная эустома и тласпи мгновенно окунают в атмосферу летних посиделок на  природе.
+                    </p>
+                    <p>
+                        <span>Размер сборного букета</span>
+                        - около 30-35 см</p>
+                    <p>Напоминаем, что мы не копируем свои букеты. Мы создаем каждый букет уникальным: наши опытные флористы полностью сохраняют настроение и цветовую гамму каждого букета, опираясь на имеющийся в студии выбор цветов. Каждый цветок — единственный в своем роде, его оттенок и размер могут слегка меняться от поставки к поставке. Ни одна замена цветка в составе не испортит красоты букета Вы можете нам довериться!
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
-
-
-</div>
-
-
-
-<!--style2-header-wrapper-->
-<div class="header-wrapper">
+    </body>
+</html></section><!--style5-questions--><section class="questions section">
 <div class="container">
-  <div class="header__bottom" >
-    <!-- Logo -->
-    <a class="header__logo" href="/"><img width="110" src="img/logo.svg" alt="логотип"></a>
-    
-    
-    <!-- Menu -->
-    <nav class="nav">
-        <ul class="header__menu">
-
-          <li class="header__menu-item dropdown">
-            <a href="#">Розы 
-              <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-                </svg>
-              </div>
-          </a>
-          <div class="dropdown-content" >     
-            <a class="dropdown__item" href="#">Одноголовые</a>
-            <a  class="dropdown__item" href="#">Кустовые</a>
-          </div>
-          </li>
-
-          <li class="header__menu-item dropdown">
-            <a href="#">Сборные
-              <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-                </svg>
-              </div>
-          </a>
-          <div class="dropdown-content" >     
-            <a class="dropdown__item" href="#">С розами</a>
-            <a  class="dropdown__item" href="#">С кустовыми розами</a>
-            <a  class="dropdown__item" href="#">С герберами</a>
-            <a  class="dropdown__item" href="#">С лилиями</a>
-            <a  class="dropdown__item" href="#">С хризантемами</a>
-            <a  class="dropdown__item" href="#">С орхидеями</a>
-            <a  class="dropdown__item" href="#">С альстрометриями</a>
-            <a  class="dropdown__item" href="#">С гартензиями</a>
-            <a  class="dropdown__item" href="#">С ирисами</a>
-            <a  class="dropdown__item" href="#">С гвоздиками</a>
-            <a  class="dropdown__item" href="#">С эустомой</a>
-            <a  class="dropdown__item" href="#">С ромашками</a>
-            <a  class="dropdown__item" href="#">С тюльпанами</a>
-          
-          </div>
-          </li>
-          <li class="header__menu-item dropdown">
-            <a href="#">Монобукеты
-              <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-                </svg>
-              </div>
-          </a>
-          <div class="dropdown-content" >     
-            <a class="dropdown__item" href="#">Одноголовые</a>
-            <a  class="dropdown__item" href="#">Кустовые</a>
-          </div>
-          </li>
-
-          <li class="header__menu-item dropdown">
-            <a href="#">Цветочные композиции
-              <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-                </svg>
-              </div>
-          </a>
-          <div class="dropdown-content" >     
-            <a class="dropdown__item" href="#">Одноголовые</a>
-            <a  class="dropdown__item" href="#">Кустовые</a>
-          </div>
-          </li>
-
-          <li class="header__menu-item dropdown">
-            <a href="#">Съедобные композиции
-              <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-                </svg>
-              </div>
-          </a>
-          <div class="dropdown-content" >     
-            <a class="dropdown__item" href="#">Одноголовые</a>
-            <a  class="dropdown__item" href="#">Кустовые</a>
-          </div>
-          </li>
-   
-     
-        </ul>
-    </nav>
-
-
-<div class="header__card">
-<a class="header__card-item" href="#">
-<img src="img/like.svg" alt="like"><span>Избранное </span>
-<strong class="total_count"> (12)</strong>
-</a>
-
-<a class="header__card-item" href="#">
-<img src="img/card.svg" alt="card"><span>Корзина</span> 
-<strong class="total_count"> (0)</strong>
-</a>
-</div>
-
-<div class="header__burger">
-<span></span>
-</div>
-
-  </div>
-  <nav id="site-navigation-mobile" class="main-navigation fixed" ><div class="main-navigation-inner full"><div><ul id="header_menu" class="menu">
-    <li class="header__menu-item dropdown">
-      <a href="#">Съедобные композиции
-        <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-          <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-          </svg>
-        </div>
-    </a>
-    <div class="dropdown-content show" >     
-      <a class="dropdown__item" href="#">Одноголовые</a>
-      <a  class="dropdown__item" href="#">Кустовые</a>
+    <div class="block__title block__title-titlelight">
+        <h2>Частые вопросы</h2>
     </div>
-    </li>
 
-    <li class="header__menu-item dropdown">
-      <a href="#">Съедобные композиции
-        <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-          <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-          </svg>
-        </div>
-    </a>
-    <div class="dropdown-content show" >     
-      <a class="dropdown__item" href="#">Одноголовые</a>
-      <a  class="dropdown__item" href="#">Кустовые</a>
-    </div>
-    </li>
-
-    
-    <li class="header__menu-item dropdown">
-      <a href="#">Съедобные композиции
-        <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-          <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-          </svg>
-        </div>
-    </a>
-    <div class="dropdown-content show" >     
-      <a class="dropdown__item" href="#">Одноголовые</a>
-      <a  class="dropdown__item" href="#">Кустовые</a>
-    </div>
-    </li>
-    
-    <li class="header__menu-item dropdown">
-      <a href="#">Съедобные композиции
-        <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-          <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-          </svg>
-        </div>
-    </a>
-    <div class="dropdown-content show" >     
-      <a class="dropdown__item" href="#">Одноголовые</a>
-      <a  class="dropdown__item" href="#">Кустовые</a>
-    </div>
-    </li>
-    <li class="header__menu-item dropdown">
-      <a href="#">Съедобные композиции
-        <div class="dropdown__svg"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-          <path d="M3.43301 4.25C3.24056 4.58333 2.75944 4.58333 2.56699 4.25L0.834937 1.25C0.642487 0.916667 0.88305 0.5 1.26795 0.5L4.73205 0.5C5.11695 0.5 5.35751 0.916666 5.16506 1.25L3.43301 4.25Z" fill="#cc9744"/>
-          </svg>
-        </div>
-    </a>
-    <div class="dropdown-content show" >     
-      <a class="dropdown__item" href="#">Одноголовые</a>
-      <a  class="dropdown__item" href="#">Кустовые</a>
-    </div>
-    </li>
-   
-    </ul></div></div></nav>
-
-  </div>
-</div>
-
-<!--css/_product-card/product-block.css-->
-<section class="section product-block">
-<div class="container">
-
-<div class="product"> 
-  <nav class="breadcrumb breadcrumb-active breadcrumb-active-mobile"><a href="#">Главная</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a href="#">Сборные букеты</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a  class="breadcrumb-active" href="#">Букет Pink Garden S
-  </a></nav>
-  <div class="product-images">
-      <div class="product-gallery"></a>
-        <a href="#"><img src="img/product-1.jpg" alt="product"></a>
-
-      </div>
-  </div>
-  <div class="product__info">
-
-      <nav class="breadcrumb breadcrumb-active breadcrumb-active-notMobile"><a href="#">Главная</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a href="#">Сборные букеты</a>&nbsp;&nbsp;<span class="wci-chevron-right">></span>&nbsp;&nbsp;<a  class="breadcrumb-active" href="#">Букет Pink Garden S
-      </a></nav>
-      <!-- <div class="product-images">
-        <div class="product-gallery"></a>
-          <a href="#"><img src="/img/product-1.jpg" alt="product"></a>
-        </div>
-    </div> -->
-      <h1 class="product__title">Букет Pink Garden S
-      </h1>
-      <div class="product__meta">
-        <span class="product__meta-art">Артикул: <span>00348</span></span>
-        <span class="product__meta-kat">Категория: <a href="#">Сборные букеты</a></span>
-        <span class="product__meta-metki">Метки: <a href="#">С розами</a></span>
-      </div>
-
-<form class="product__cart" action="#">
-    
-    <div class="quantity">
-        <span>2 500 &#8381</span>
-        <div class="quantity__input">
-          <button type="button" class="quantity-minus"></button>
-          <input type="number" id="quantity_64cf5cac05243" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" placeholder="" inputmode="numeric">
-          <button type="button" class="quantity-plus"></button>	
-        </div>
-        
-
-    </div>
-    <div class="product__btn-flex">
-      <a type="submit" name="add-to-cart" value="2954" class="btn product__btn-light btn-gradient">В корзину</a>
-      <a class="btn product__btn-dark btn-stroke" >Купить в 1 клик</a>
-    </div>
-    
-</form>
-</div>
-
-</div>
-  <div class="woocommerce-tabs wc-tabs-wrapper">
-    <ul class="tabs wc-tabs" role="tablist">
-<li class="description_tab active" id="tab-title-description" role="tab" aria-controls="tab-description">
-<a href="#tab-description">Описание</a>
-</li>
-</ul>
-<div class="product__description">
-    <p>Нежный садовый букет с очаровательным составом: кустовые розы, ароматный пион, стойкие колокольчики альстромерий, воздушная эустома и тласпи мгновенно окунают в атмосферу летних посиделок на  природе.
-    </p>
-    <p><span>Размер сборного букета</span> - около 30-35 см</p>
-   <p>Напоминаем, что мы не копируем свои букеты. Мы создаем каждый букет уникальным: наши опытные флористы полностью сохраняют настроение и цветовую гамму каждого букета, опираясь на имеющийся в студии выбор цветов. Каждый цветок — единственный в своем роде, его оттенок и размер могут слегка меняться от поставки к поставке. Ни одна замена цветка в составе не испортит красоты букета Вы можете нам довериться!
-   </p>
-</div>
-</div>
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--style5-questions-->
-<section class="questions section">
-        <div class="container">
-          <div class="block__title block__title-titlelight"><h2>Частые вопросы</h2></div>
-
-          <div id="block1" class="faq">
-            <span class="title" data-target="content1">Почему 90% клиентов заказывают именно у нас?</span><div class="faq-btn" data-target="content1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-              <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
-              </svg></div>
-            </div>
-            <div class="block-content" id="content1">Самое большое количество положительных отзывов с рейтингом 5 звезд.
-              Открытка или записка к букету с Вашим текстом.
-              Контроль качества свежести ингредиентов и фотография собранной композиции.
-              Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>  
-    
-
-            <div id="block2" class="faq">
-              <span class="title" data-target="content2">Есть готовые букеты в наличии?</span><div class="faq-btn" data-target="content2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+    <div id="block1" class="faq">
+        <span class="title" data-target="content1">Почему 90% клиентов заказывают именно у нас?</span>
+        <div class="faq-btn" data-target="content1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewbox="0 0 16 9" fill="none">
                 <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
-                </svg></div>
-              </div>
-              <div class="block-content" id="content2">Самое большое количество положительных отзывов с рейтингом 5 звезд.
-                Открытка или записка к букету с Вашим текстом.
-                Контроль качества свежести ингредиентов и фотография собранной композиции.
-                Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>  
-    
-              
-          
-                <div id="block3" class="faq">
-                  <span class="title" data-target="content3">Почему 90% клиентов заказывают именно у нас?</span><div class="faq-btn" data-target="content3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                    <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
-                    </svg></div>
-                  </div>
-                  <div class="block-content" id="content3">Самое большое количество положительных отзывов с рейтингом 5 звезд.
-                    Открытка или записка к букету с Вашим текстом.
-                    Контроль качества свежести ингредиентов и фотография собранной композиции.
-                    Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>  
-          
-                    <div id="block4" class="faq">
-                      <span class="title" data-target="content4">Почему 90% клиентов заказывают именно у нас?</span><div class="faq-btn" data-target="content4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                        <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
-                        </svg></div>
-                      </div>
-                      <div class="block-content" id="content4">Самое большое количество положительных отзывов с рейтингом 5 звезд.
+            </svg>
+        </div>
+    </div>
+    <div class="block-content" id="content1">Самое большое количество положительных отзывов с рейтингом 5 звезд.
+                      Открытка или записка к букету с Вашим текстом.
+                      Контроль качества свежести ингредиентов и фотография собранной композиции.
+                      Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>
+
+
+    <div id="block2" class="faq">
+        <span class="title" data-target="content2">Есть готовые букеты в наличии?</span>
+        <div class="faq-btn" data-target="content2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewbox="0 0 16 9" fill="none">
+                <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+    <div class="block-content" id="content2">Самое большое количество положительных отзывов с рейтингом 5 звезд.
                         Открытка или записка к букету с Вашим текстом.
                         Контроль качества свежести ингредиентов и фотография собранной композиции.
-                        Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>  
-      
+                        Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>
+
+
+    <div id="block3" class="faq">
+        <span class="title" data-target="content3">Почему 90% клиентов заказывают именно у нас?</span>
+        <div class="faq-btn" data-target="content3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewbox="0 0 16 9" fill="none">
+                <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+    <div class="block-content" id="content3">Самое большое количество положительных отзывов с рейтингом 5 звезд.
+                            Открытка или записка к букету с Вашим текстом.
+                            Контроль качества свежести ингредиентов и фотография собранной композиции.
+                            Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>
+
+    <div id="block4" class="faq">
+        <span class="title" data-target="content4">Почему 90% клиентов заказывают именно у нас?</span>
+        <div class="faq-btn" data-target="content4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewbox="0 0 16 9" fill="none">
+                <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 6L7 8L9 8L9 6L7 6Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+    <div class="block-content" id="content4">Самое большое количество положительных отзывов с рейтингом 5 звезд.
+                                Открытка или записка к букету с Вашим текстом.
+                                Контроль качества свежести ингредиентов и фотография собранной композиции.
+                                Доставим сюрприз, зная только номер получателя или страницу в соцсети, при этом не раскроем секрет до момента вручения.</div>
+
 </section>
 
 <!--_product-card/similarProducts-->
 <section class="similarProducts section">
-  <div class="container">
-    <h1 class="product__title similarProducts__title">Похожие товары</h1>
-    <div class="similarProducts__wrapper">
-      <div class="similarProducts__item catalog__item-body">
-        <div class="similarProducts__item-img">
-          <img src="img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
-      <div class="similarProducts__item catalog__item-body">
-        <div class="similarProducts__item-img">
-          <img src="img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
-    
-    
-      <div class="similarProducts__item catalog__item-body">
-        <div class="similarProducts__item-img">
-          <img src="img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
-    
-      <div class="similarProducts__item catalog__item-body">
-        <div class="similarProducts__item-img">
-          <img src="img/similarProducts__item.jpg" alt="none">
-          <button class="quantity__heart similarProducts__svg-active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
-              <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
-              </svg>
-          </button>
-        </div>
-        <a href="#" class="similarProducts__item-title">
-          Утро над Вайт-Ривер S
-        </a>
-        <span class="similarProducts__item-price">
-          4 500р
-        </span>
-        <a href="#" class=" similarProducts__btn">В корзину</a>
-      </div>
+    <div class="container">
+        <h1 class="product__title similarProducts__title">Похожие товары</h1>
+        <div class="similarProducts__wrapper">
+            <div class="similarProducts__item catalog__item-body">
+                <div class="similarProducts__item-img">
+                    <img src="img/similarProducts__item.jpg" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewbox="0 0 33 28" fill="none">
+                            <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="similarProducts__item-title">
+                    Утро над Вайт-Ривер S
+                </a>
+                <span class="similarProducts__item-price">
+                    4 500р
+                </span>
+                <a href="#" class=" similarProducts__btn">В корзину</a>
+            </div>
+            <div class="similarProducts__item catalog__item-body">
+                <div class="similarProducts__item-img">
+                    <img src="img/similarProducts__item.jpg" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewbox="0 0 33 28" fill="none">
+                            <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="similarProducts__item-title">
+                    Утро над Вайт-Ривер S
+                </a>
+                <span class="similarProducts__item-price">
+                    4 500р
+                </span>
+                <a href="#" class=" similarProducts__btn">В корзину</a>
+            </div>
 
 
+            <div class="similarProducts__item catalog__item-body">
+                <div class="similarProducts__item-img">
+                    <img src="img/similarProducts__item.jpg" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewbox="0 0 33 28" fill="none">
+                            <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="similarProducts__item-title">
+                    Утро над Вайт-Ривер S
+                </a>
+                <span class="similarProducts__item-price">
+                    4 500р
+                </span>
+                <a href="#" class=" similarProducts__btn">В корзину</a>
+            </div>
+
+            <div class="similarProducts__item catalog__item-body">
+                <div class="similarProducts__item-img">
+                    <img src="img/similarProducts__item.jpg" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewbox="0 0 33 28" fill="none">
+                            <path d="M30.3514 2.26074C28.8079 0.753529 26.6753 0.000244141 23.9528 0.000244141C23.1994 0.000244141 22.4305 0.130878 21.6468 0.392019C20.8628 0.653351 20.1335 1.00592 19.4596 1.44948C18.7849 1.89291 18.205 2.30933 17.7185 2.6981C17.2343 3.08547 16.7719 3.49929 16.3333 3.93766C15.8946 3.49932 15.4321 3.08551 14.9479 2.6981C14.4616 2.30933 13.8815 1.89316 13.2069 1.44948C12.5324 1.00573 11.8032 0.653415 11.0194 0.392019C10.2356 0.130942 9.46682 0.000244141 8.71341 0.000244141C5.9911 0.000244141 3.85843 0.75372 2.31508 2.26074C0.771737 3.76763 0 5.85777 0 8.53137C0 9.34563 0.143021 10.1843 0.428488 11.0469C0.713954 11.9097 1.03926 12.6451 1.40377 13.2526C1.76822 13.86 2.18151 14.4527 2.64333 15.0299C3.10515 15.6073 3.44265 16.0049 3.65507 16.2238C3.86769 16.4423 4.03485 16.6005 4.15635 16.6975L15.5312 27.6716C15.75 27.8905 16.0173 28 16.3332 28C16.6491 28 16.9167 27.8905 17.1354 27.672L28.4921 16.7343C31.2751 13.9516 32.6665 11.2172 32.6665 8.53137C32.6666 5.85777 31.8947 3.76763 30.3514 2.26074Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="similarProducts__item-title">
+                    Утро над Вайт-Ривер S
+                </a>
+                <span class="similarProducts__item-price">
+                    4 500р
+                </span>
+                <a href="#" class=" similarProducts__btn">В корзину</a>
+            </div>
+
+
+        </div>
     </div>
-  </div>
 </section>
 
 
 <!--_product-card/viewedProducts-->
 <section class="viewedProducts section">
-  <div class="container">
-      <div class="block__title block__title-titlelight"><h2>Недавно просмотренные товары</h2></div>
-      <div class="viewedProducts__wrapper">
-        <div class="similarProducts__item viewedProducts__item">
-          <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="img/viewedProducts__flowers.png" alt="none">
-            <button class="quantity__heart similarProducts__svg-active">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
-              <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
-              <defs>
-                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C38B34"/>
-                  <stop offset="1" stop-color="#ECC47E"/>
-                </linearGradient>
-              </defs>
-              </svg>
-            </button>
-          </div>
-          <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
-           <div class="similarProducts__item-title viewedProducts__item-title">
-              <a href="#">Утро над Вайт-Ривер S</a>
-            </div>
-            <span class="similarProducts__item-price viewedProducts__item-price">
-              4 500р
-            </span>
-            <div><a href="#" class="similarProducts__btn ">В корзину</a></div>
-          </div>
-          
+    <div class="container">
+        <div class="block__title block__title-titlelight">
+            <h2>Недавно просмотренные товары</h2>
         </div>
-        <div class="similarProducts__item viewedProducts__item">
-          <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="img/viewedProducts__flowers.png" alt="none">
-            <button class="quantity__heart similarProducts__svg-active">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
-              <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
-              <defs>
-                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C38B34"/>
-                  <stop offset="1" stop-color="#ECC47E"/>
-                </linearGradient>
-              </defs>
-              </svg>
-            </button>
-          </div>
-          <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
-           <div class="similarProducts__item-title viewedProducts__item-title">
-              <a href="#">Утро над Вайт-Ривер S</a>
+        <div class="viewedProducts__wrapper">
+            <div class="similarProducts__item viewedProducts__item">
+                <div class="similarProducts__item-img viewedProducts__item-img">
+                    <img src="img/viewedProducts__flowers.png" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewbox="0 0 25 23" fill="none">
+                            <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#C38B34"/>
+                                    <stop offset="1" stop-color="#ECC47E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
+                    <div class="similarProducts__item-title viewedProducts__item-title">
+                        <a href="#">Утро над Вайт-Ривер S</a>
+                    </div>
+                    <span class="similarProducts__item-price viewedProducts__item-price">
+                        4 500р
+                    </span>
+                    <div>
+                        <a href="#" class="similarProducts__btn ">В корзину</a>
+                    </div>
+                </div>
+
             </div>
-            <span class="similarProducts__item-price viewedProducts__item-price">
-              4 500р
-            </span>
-            <div><a href="#" class="similarProducts__btn ">В корзину</a></div>
-          </div>
-          
-        </div>
+            <div class="similarProducts__item viewedProducts__item">
+                <div class="similarProducts__item-img viewedProducts__item-img">
+                    <img src="img/viewedProducts__flowers.png" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewbox="0 0 25 23" fill="none">
+                            <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#C38B34"/>
+                                    <stop offset="1" stop-color="#ECC47E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
+                    <div class="similarProducts__item-title viewedProducts__item-title">
+                        <a href="#">Утро над Вайт-Ривер S</a>
+                    </div>
+                    <span class="similarProducts__item-price viewedProducts__item-price">
+                        4 500р
+                    </span>
+                    <div>
+                        <a href="#" class="similarProducts__btn ">В корзину</a>
+                    </div>
+                </div>
+
+            </div>
 
 
-        <div class="similarProducts__item viewedProducts__item">
-          <div class="similarProducts__item-img viewedProducts__item-img">
-            <img src="img/viewedProducts__flowers.png" alt="none">
-            <button class="quantity__heart similarProducts__svg-active">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 25 23" fill="none">
-              <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
-              <defs>
-                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C38B34"/>
-                  <stop offset="1" stop-color="#ECC47E"/>
-                </linearGradient>
-              </defs>
-              </svg>
-            </button>
-          </div>
-          <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
-           <div class="similarProducts__item-title viewedProducts__item-title">
-              <a href="#">Утро над Вайт-Ривер S</a>
+            <div class="similarProducts__item viewedProducts__item">
+                <div class="similarProducts__item-img viewedProducts__item-img">
+                    <img src="img/viewedProducts__flowers.png" alt="none">
+                    <button class="quantity__heart similarProducts__svg-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewbox="0 0 25 23" fill="none">
+                            <path d="M23.2282 2.5158C22.0469 1.36232 20.4148 0.785828 18.3313 0.785828C17.7547 0.785828 17.1662 0.885803 16.5665 1.08566C15.9665 1.28565 15.4083 1.55548 14.8926 1.89494C14.3762 2.2343 13.9324 2.55298 13.5601 2.85052C13.1895 3.14698 12.8356 3.46367 12.5 3.79916C12.1643 3.46369 11.8103 3.147 11.4397 2.85052C11.0676 2.55298 10.6236 2.23449 10.1073 1.89494C9.59112 1.55533 9.03305 1.2857 8.43319 1.08566C7.83339 0.885852 7.24502 0.785828 6.66843 0.785828C4.58503 0.785828 2.95288 1.36247 1.77175 2.5158C0.590616 3.66903 0 5.26864 0 7.31475C0 7.93791 0.109455 8.57979 0.327924 9.23989C0.546394 9.90023 0.795355 10.463 1.07432 10.9279C1.35323 11.3928 1.66953 11.8464 2.02296 12.2882C2.37639 12.73 2.63468 13.0343 2.79725 13.2019C2.95997 13.3691 3.08789 13.4901 3.18088 13.5644L11.8861 21.9629C12.0536 22.1304 12.2581 22.2142 12.4999 22.2142C12.7417 22.2142 12.9464 22.1304 13.1138 21.9632L21.8052 13.5925C23.9351 11.4629 24.9999 9.37021 24.9999 7.31475C25 5.26864 24.4092 3.66903 23.2282 2.5158Z" fill="url(#paint0_linear_282_189)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_282_189" x1="18.2926" y1="0.785824" x2="-1.81858" y2="2.65579" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#C38B34"/>
+                                    <stop offset="1" stop-color="#ECC47E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="similarProducts__item-wrapper viewedProducts__item-wrapper">
+                    <div class="similarProducts__item-title viewedProducts__item-title">
+                        <a href="#">Утро над Вайт-Ривер S</a>
+                    </div>
+                    <span class="similarProducts__item-price viewedProducts__item-price">
+                        4 500р
+                    </span>
+                    <div>
+                        <a href="#" class="similarProducts__btn ">В корзину</a>
+                    </div>
+                </div>
+
             </div>
-            <span class="similarProducts__item-price viewedProducts__item-price">
-              4 500р
-            </span>
-            <div><a href="#" class="similarProducts__btn ">В корзину</a></div>
-          </div>
-          
         </div>
-      </div>
-      
-  </div>
+
+    </div>
 </section>
 
 
-
-
 <!--style6-delivery-->
-      <section class="delivery section ">
-        <div class="container">
-          <div class="delivery-content">     
-             <div class="delivery-content__text">
-            <div class="block__title block__title-left"><h2>Доставка цветов и букетов 
-              в Екатеринбурге</h2></div>
-                                          <div class="delivery__text">Доставим съедобные композиции на лучших условиях в городе. Порадуйте вашего близкого человека благодаря нашему сервису доставки.</div>
-                          <div class="delivery__btn">
-                             
-                        <a  href="/podobrat/" class="btn btn-gradient">Подобрать по цене</a>
-                        <a href="/podobrat/" class="btn btn-light">Каталог</a>
-  </div>              
-              </div>   
-  
-      </div>
-    
-      <div  class="delivery__img">
-        <img src="img/woman.png" alt="доставка">
-      </div>
+<section class="delivery section ">
+    <div class="container">
+        <div class="delivery-content">
+            <div class="delivery-content__text">
+                <div class="block__title block__title-left">
+                    <h2>Доставка цветов и букетов 
+                                      в Екатеринбурге</h2>
+                </div>
+                <div class="delivery__text">Доставим съедобные композиции на лучших условиях в городе. Порадуйте вашего близкого человека благодаря нашему сервису доставки.</div>
+                <div class="delivery__btn">
+
+                    <a href="/podobrat/" class="btn btn-gradient">Подобрать по цене</a>
+                    <a href="/podobrat/" class="btn btn-light">Каталог</a>
+                </div>
+            </div>
+
         </div>
-    
-        <div class="bg-1"><img src="img/fon-4.png"></div>
-      </section>
 
+        <div class="delivery__img">
+            <img src="img/woman.png" alt="доставка">
+        </div>
+    </div>
 
+    <div class="bg-1"><img src="img/fon-4.png"></div>
+</section>
 
 
 <!--style8-footer-->
-      <footer class="footer section">
-        <div class="container">
-          <div class="footer__content">
+<footer class="footer section">
+    <div class="container">
+        <div class="footer__content">
 
 
-
-
-          
-         <div class="footer__col footer__col-20">
-              <a class="footer__logo" href="/"><img width="117" src="img/logo.svg"></a>
-              <p><a href="#" class="footer__link">Выберите город.</a> (Внимание! Возможна только доставка - самовывоза нет)
-              </p>
+            <div class="footer__col footer__col-20">
+                <a class="footer__logo" href="/"><img width="117" src="img/logo.svg"></a>
+                <p>
+                    <a href="#" class="footer__link">Выберите город.</a>
+                    (Внимание! Возможна только доставка - самовывоза нет)
+                </p>
             </div>
 
-              <div class="footer__col footer__col-20">
-              <p>        
-                  <span class="footer__muted">Звонки</span> с 10:00 до 19:00 - <br><a href="tel:89270833305" target="_blank" rel="noopener noreferrer" class="footer__link">8 (927) 083-33-05</a>
-                  </p><br>
-                  <p><span class="footer__muted">Приём заявок через сайт, соцсети и мессенджеры</span> - <strong>24/7 (круглосуточно)</strong>
-                  </p>
-                
-              
-              <div class="footer-soc">
-                <a href="#"><img src="img/whatsap.svg"></a>
-                <a href="#"><img src="img/inst.svg"></a>
-                <a href="#"><img src="img/telegr.svg"></a>
-                <a href="#"><img src="img/vk.svg"></a>
-              </div>
+            <div class="footer__col footer__col-20">
+                <p>
+                    <span class="footer__muted">Звонки</span>
+                    с 10:00 до 19:00 -
+                    <br><a href="tel:89270833305" target="_blank" rel="noopener noreferrer" class="footer__link">8 (927) 083-33-05</a>
+                </p><br>
+                <p>
+                    <span class="footer__muted">Приём заявок через сайт, соцсети и мессенджеры</span>
+                    -
+                    <strong>24/7 (круглосуточно)</strong>
+                </p>
+
+
+                <div class="footer-soc">
+                    <a href="#"><img src="img/whatsap.svg"></a>
+                    <a href="#"><img src="img/inst.svg"></a>
+                    <a href="#"><img src="img/telegr.svg"></a>
+                    <a href="#"><img src="img/vk.svg"></a>
+                </div>
             </div>
-   
 
 
-
-
-          <div class="footer__content-40"  >
-        <div class="footer__col">
-           <div class="footer-title">
-          <h3>Разделы</h3> 
+            <div class="footer__content-40">
+                <div class="footer__col">
+                    <div class="footer-title">
+                        <h3>Разделы</h3>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#">Подобрать</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="footer__col">
+                <div class="footer-title">
+                    <h3>Кабинет пользователя</h3>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">Вход | Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="#">Заказы</a>
+                    </li>
+                    <li>
+                        <a href="#">Избранное</a>
+                    </li>
+                    <li>
+                        <a href="#">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="footer__links">
-       <li><a href="#">Подобрать</a></li> 
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Доставка</a></li>
-       <li><a href="#">Оплата</a></ul></li> 
-        </div>
-        <div class="footer__col"> <div class="footer-title">
-          <h3>Кабинет пользователя</h3> 
-        </div>
-        <ul class="footer__links">
-        <li><a href="#">Вход | Регистрация</a></li>
-        <li><a href="#">Заказы</a></li>
-        <li><a href="#">Избранное</a></li>
-        <li><a href="#">Публичная оферта</a></li>
-      </ul>
-        </div>
-          </div>
 
-          
-          <div class="footer__col footer__col-20">
+
+        <div class="footer__col footer__col-20">
 
             <img class="footer__ukassa" src="img/cassa.png" alt="ю-касса">
-            <p class="footer__politic">© 2023 Доставка премиум букетов<br> «Название». Все права защищены.<br> Копирование информации запрещено.</p>
-          </div>
-          </div>
-    
+            <p class="footer__politic">© 2023 Доставка премиум букетов<br>
+                «Название». Все права защищены.<br>
+                Копирование информации запрещено.</p>
         </div>
-        <div class="bg-1"><img  src="img/footer-fon1.png"  ></div>
-        <div class="bg-2"><img  src="img/footer-fon2.png"  ></div>
-      </footer>
+    </div>
 
-
-
-      <div  class="modal pum-container" >
-<div class="pum-content popmake-content" tabindex="0">
-  <div id="pum_popup_title_4812" class="pum-title popmake-title">
-    Выберите город доставки:			</div>
-
-    <p><span >Начните вводить название города, а мы вам подскажем</span><br>
-      <input class="field-gorod" id="field-gorod" name="field-gorod" type="text" placeholder="Введите название города"></p>
-      <div class="grid-container simplebar-scrollable-y">
-      <div class="simplebar-wrapper" >
-        <div class="simple-content">
-          <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-          <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-          <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-          <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-          <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
-          <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
-          <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
-          <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
-          <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
-          <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
-          <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
-          <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
-        </div>
-
-        </div>
-
-        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div></div>
-
-        <div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar simplebar-visible" style="height: 25px; transform: translate3d(0px, 18px, 0px); display: block;"></div></div>
-      </div>
 </div>
-<button type="button" data-fancybox-close="" class="modal__close" data-close title="Close"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
-      </div>
+<div class="bg-1"><img src="img/footer-fon1.png"></div>
+<div class="bg-2"><img src="img/footer-fon2.png"></div></footer><div class="modal pum-container">
+<div class="pum-content popmake-content" tabindex="0">
+    <div id="pum_popup_title_4812" class="pum-title popmake-title">
+        Выберите город доставки:
+    </div>
 
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <p>
+        <span>Начните вводить название города, а мы вам подскажем</span><br>
+        <input class="field-gorod" id="field-gorod" name="field-gorod" type="text" placeholder="Введите название города"></p>
+    <div class="grid-container simplebar-scrollable-y">
+        <div class="simplebar-wrapper">
+            <div class="simple-content">
+                <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+                <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+                <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+                <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+                <span class="city-for-choose" data-city-utm="Agidel">Агидель</span>
+                <span class="city-for-choose" data-city-utm="Almetevsk">Альметьевск</span>
+                <span class="city-for-choose" data-city-utm="Aksai">Аксай</span>
+                <span class="city-for-choose" data-city-utm="Alapaevsk">Алапаевск</span>
+                <span class="city-for-choose" data-city-utm="Abakan">Абакан</span>
+                <span class="city-for-choose" data-city-utm="Arzamas">Арзамас</span>
+                <span class="city-for-choose" data-city-utm="Anzherosudzhensk">Анжеро-Судженск</span>
+                <span class="city-for-choose" data-city-utm="Aleksin">Алексин</span>
+            </div>
+
+        </div>
+
+        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+            <div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div>
+        </div>
+
+        <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+            <div class="simplebar-scrollbar simplebar-visible" style="height: 25px; transform: translate3d(0px, 18px, 0px); display: block;"></div>
+        </div>
+    </div>
+</div>
+<button type="button" data-fancybox-close="" class="modal__close" data-close title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewbox="0 0 24 24">
+        <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+</button></div><script src="js/main.js"></script></body></html>

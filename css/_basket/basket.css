@@ -237,6 +237,11 @@ select {
   background-position: center;
   background-size: cover;
 }
+.basket__title {
+  color: #a7a4a5;
+  font-family: "Open Sans reg", sans-serif;
+  font-size: calc(14px + 4 * (100vw - 400px) / 1920);
+}
 .basket__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,15 +249,14 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .basket__wrapper {
   display: grid;
   grid-template-columns: [col1-s] minmax(216px, 400px) [col2-s] minmax(75px, 104px) [col3-s] minmax(125px, 400px) [col4-s] minmax(75px, 104px) [col5-s] 30px;
   grid-template-rows: [row1-s] 30px [row2-s] 1px [row3-s] 100px;
-  grid-auto-rows: [row1-s] 30px [row2-s] 1px [row3-s] 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -272,23 +276,14 @@ select {
 .basket__price {
   grid-column: col2-s/col3-s;
   grid-row: row1-s/row2-s;
-  color: #a7a4a5;
-  font-family: "Open Sans reg", sans-serif;
-  font-size: 18px;
 }
 .basket__kol {
   grid-column: col3-s/col4-s;
   grid-row: row1-s/row2-s;
-  color: #a7a4a5;
-  font-family: "Open Sans reg", sans-serif;
-  font-size: 18px;
 }
 .basket__itogo {
   grid-column: col4-s/col5-s;
   grid-row: row1-s/row2-s;
-  color: #a7a4a5;
-  font-family: "Open Sans reg", sans-serif;
-  font-size: 18px;
 }
 .basket__close {
   display: block;
@@ -321,7 +316,7 @@ select {
   max-width: 160px;
   color: #20191D;
   font-family: "Open Sans reg", sans-serif;
-  font-size: 18px;
+  font-size: calc(13px + 5 * (100vw - 400px) / 1920);
   font-weight: 600;
 }
 .basket__price-number {
@@ -329,7 +324,7 @@ select {
   grid-row: row3-s/row3-s;
   color: #000;
   font-family: "Open Sans bold", sans-serif;
-  font-size: 20px;
+  font-size: calc(16px + 4 * (100vw - 400px) / 1920);
   font-weight: 700;
 }
 .basket__input {
@@ -344,7 +339,7 @@ select {
   grid-row: row3-s/row3-s;
   color: #000;
   font-family: "Open Sans bold", sans-serif;
-  font-size: 20px;
+  font-size: calc(16px + 4 * (100vw - 400px) / 1920);
   font-weight: 700;
 }
 .basket__total {
@@ -359,7 +354,8 @@ select {
           flex: 0 0 auto;
   color: #fff;
   font-family: "Open Sans reg", sans-serif;
-  font-size: 30px;
+  font-size: calc(20px + 10 * (100vw - 400px) / 1920);
+  text-align: center;
 }
 .basket__btn {
   margin-top: 20px;
@@ -377,9 +373,6 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 20px;
-  }
-  .basket__total {
-    width: 100vw;
   }
 }
 @media (max-width: 800px) {
@@ -426,5 +419,10 @@ select {
   .basket__itogo-number {
     grid-column: col3-s/col3-s;
     grid-row: row4-s/row4-s;
+  }
+}
+@media (max-width: 600px) {
+  .basket__total {
+    width: 100%;
   }
 }/*# sourceMappingURL=basket.css.map */

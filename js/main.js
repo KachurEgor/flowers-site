@@ -21,3 +21,7 @@ close.addEventListener('click', function(){
 	filter.classList.remove('active');
 	//filter.classList.toggle('active');
 });
+
+
+
+
