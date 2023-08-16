@@ -252,7 +252,6 @@ padding-bottom: 60px;
     &__wrapper{
       max-width: 100%;
       display: none;  
-    
     }
     .active{
       display: block;
@@ -272,7 +271,6 @@ padding-bottom: 60px;
       display: flex;
       align-items: center;
     }
-
     .select__wrapper::before {
       content: url('../../img/filter2.svg');
       margin-right: 10px;
