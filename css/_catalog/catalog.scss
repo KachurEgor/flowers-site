@@ -446,8 +446,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 
-
-
 @mixin range-slider($width, $height, $input-top, $input-bg-color, $input-thumb-color, $float:none, $input-height:20px, $input-border-radius:14px) {
   position: relative;
   width: $width;

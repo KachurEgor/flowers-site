@@ -52,7 +52,7 @@ $gradient-color: linear-gradient(211deg, #ce8715 27.99%, #ecc47e 80.38%);
         background-image: url(../../img/reviews-fon.jpg);
         background-size: cover;
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         gap:2rem;
         padding: 20px;
         //height: 185px;
