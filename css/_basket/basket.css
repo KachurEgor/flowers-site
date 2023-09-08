@@ -256,7 +256,7 @@ select {
 .basket__wrapper {
   display: grid;
   grid-template-columns: [col1-s] minmax(216px, 400px) [col2-s] minmax(75px, 104px) [col3-s] minmax(125px, 400px) [col4-s] minmax(75px, 104px) [col5-s] 30px;
-  grid-template-rows: [row1-s] 30px [row2-s] 1px [row3-s] 100px;
+  grid-template-rows: [row1-s] 1px [row2-s] 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -272,6 +272,11 @@ select {
   grid-column: col1-s/col6-s;
   grid-row: row2-s/row2-s;
   width: 100%;
+}
+.basket__header {
+  display: grid;
+  grid-template-columns: [col1-s] minmax(216px, 400px) [col2-s] minmax(75px, 104px) [col3-s] minmax(125px, 400px) [col4-s] minmax(75px, 104px) [col5-s] 30px;
+  grid-template-rows: [row1-s] 30px;
 }
 .basket__price {
   grid-column: col2-s/col3-s;
@@ -375,14 +380,35 @@ select {
     row-gap: 20px;
   }
 }
+@media (min-width: 800px) {
+  .basket__wrapper .basket__header {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
+  .basket__items {
+    width: 100%;
+  }
+  .basket__header {
+    display: none;
+  }
   .basket__wrapper {
-    grid-template-columns: [col1-s] minmax(75px, 120px) [col2-s] minmax(125px, 200px) [col3-s] minmax(75px, 120px);
+    grid-template-columns: [col1-s] minmax(75px, 1fr) [col2-s] minmax(125px, 1fr) [col3-s] minmax(75px, 1fr);
     grid-template-rows: [row1-s] 100px [row2-s] 30px [row3-s] 1px [row4-s] 100px;
   }
   .basket__wrapper hr {
     grid-column: col1-s/col6-s;
     grid-row: row3-s/row3-s;
+  }
+  .basket__wrapper .basket__header {
+    display: grid;
+  }
+  .basket__header {
+    grid-column: col1-s/col4-s;
+    grid-row: row2-s/row3-s;
+    grid-template-columns: [col1-s] minmax(75px, 1fr) [col2-s] minmax(125px, 1fr) [col3-s] minmax(75px, 1fr);
+    grid-template-rows: [row1-s] 100px [row2-s] 30px [row3-s] 1px [row4-s] 67px;
+    gap: 10px;
   }
   .basket__item {
     grid-column: col1-s/col3-s;
@@ -422,6 +448,10 @@ select {
   }
 }
 @media (max-width: 600px) {
+  .basket__item img {
+    max-width: 55px;
+    height: auto;
+  }
   .basket__total {
     width: 100%;
   }
